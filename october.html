@@ -26,7 +26,13 @@
 
 
 
-
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -40,7 +46,6 @@
                     <!-- LOGO -->
                     <div class="topbar-left">
                         <a href="index.html" class="logo">
-
                             Zx<span class="text-custom">eComm</span>
                             <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
                         </a>
