@@ -26,7 +26,13 @@
 
 
 
-
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -40,7 +46,6 @@
                     <!-- LOGO -->
                     <div class="topbar-left">
                         <a href="index.html" class="logo">
-
                             Zx<span class="text-custom">eComm</span>
                             <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
                         </a>
@@ -114,7 +119,7 @@
 
                                 <div class="row text-center m-t-10">
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">141</h3>$MM
+                                        <h3 data-plugin="counterup">160</h3>$MM
                                         <p class="text-muted">Overall Net Revenue</p>
                                     </div>
                                     <div class="col-4">
@@ -122,12 +127,12 @@
                                         <p class="text-muted">Exceeded Budget</p>
                                     </div>
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">57</h3>%
+                                        <h3 data-plugin="counterup">60</h3>%
                                         <p class="text-muted">Exceeded Last Year</p>
                                     </div>
                                     <div class="row text-center m-t-30">
                                         <div class="col-12">
-                                            <p align="left" class="text-muted">Overall Net Revenue of $141MM YTD exceeding budget by 2% and last year by 57%.  LE is to deliver $202MM, exceeding budget by 9% and last year by 60%.  70% of countries expecting to deliver full year > BU with exception of UK, France, Belgium, and Canada.  All markets except Uruguay will deliver full year > last year.</p>
+                                            <p align="left" class="text-muted">Overall Net Revenue of $160MM YTD exceeding budget by 2% and last year by 60%.  LE is to deliver $201MM, exceeding budget by 6% and last year by 64%.  66% of countries expecting to deliver full year > BU with exception of UK, France, Belgium, and Canada.  All markets except Uruguay will deliver full year > last year.</p>
                                         </div>
 
                                     </div>
@@ -142,17 +147,7 @@
                                 <button type="button" class="btn btn-primary btn-md" onclick="window.location.href='october_NR.html'">Show Charts</button>
 
 
-                                <!-- <div class="text-center m-t-10">
-                                    <div id="morris-donut-example" style="height: 245px;"></div>
-                                    <ul class="list-inline chart-detail-list m-b-0">
-                                        <li class="list-inline-item">
-                                            <h5><i class="fa fa-circle m-r-5" style="color: #42a5f5;"></i>Series A</h5>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <h5><i class="fa fa-circle m-r-5" style="color: #64b5f6;"></i>Series B</h5>
-                                        </li>
-                                    </ul>
-                                </div> -->
+
                             </div>
                         </div>
                     </div><!-- end col -->
@@ -165,7 +160,7 @@
 
                                 <div class="row text-center m-t-30">
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">29.8</h3>%
+                                        <h3 data-plugin="counterup">29.9</h3>%
                                         <p class="text-muted">Overall MS <br></p>
                                     </div>
                                     <div class="col-4">
@@ -173,22 +168,16 @@
                                         <p class="text-muted">VS LY</p>
                                     </div>
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">-0.4</h3>pp
+                                        <h3 data-plugin="counterup">-0.1</h3>pp
                                         <p class="text-muted">VS BU</p>
                                     </div>
                                     <div class="row text-center m-t-30">
                                         <div class="col-12">
-                                            <p align="left" class="text-muted">Overall share 29.8% YTD exceeding fair share and +2.3pp vs LY but -0.4pp vs BU.  LE is to deliver 30.1%, exceeding last year by +1.9pp but missing budget by -0.2pp.  70% of countries expecting to deliver full year > BU with exception China, UK, and France.  All markets except UK expecting to deliver full year > last year.</p>
+                                            <p align="left" class="text-muted">Overall share 29.9% YTD exceeding fair share and +2.3pp vs LY but -0.1pp vs BU (September was -0.4pp).  LE is to deliver 30.3%, exceeding last year by +2.1pp but missing budget by -0.1pp.  70% of countries expecting to deliver full year > BU with exception China, UK, and France.  All markets except UK expecting to deliver full year > last year.</p>
                                         </div>
 
                                     </div>
-                                    <!-- <div class="row text-center m-t-30">
-                                        <div class="col-8">
-                                          <img src="assets/MS.png" class="img-responsive" alt="NR">
-                                          <img src="assets/MS1.png" class="img-responsive" alt="NR">
-                                        </div>
 
-                                    </div> -->
                                 </div>
                                 <button type="button" class="btn btn-primary btn-md" onclick="window.location.href='october_MS.html'">Show Charts</button>
 
@@ -208,22 +197,22 @@
 
                                 <div class="row text-center m-t-30">
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">149</h3>
-                                        <p class="text-muted">Customers</p>
+                                        <h3 data-plugin="">145</h3>
+                                        <p class="text-muted">(-4) Customers</p>
                                     </div>
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">77</h3>
-                                        <p class="text-muted">JBPs Globally</p>
+                                        <h3 data-plugin="">73 </h3>
+                                        <p class="text-muted">(-4) JBPs Globally</p>
                                     </div>
                                     <div class="col-4">
-                                        <h3 data-plugin="counterup">2.31</h3>
-                                        <p class="text-muted">Overall JBP Score </p>
+                                        <h3 data-plugin="counterup">2.45</h3>
+                                        <p class="text-muted">(+.14) Overall JBP Score </p>
                                     </div>
                                     <div class="row text-center m-t-30">
                                         <div class="col-12">
-                                            <p align="left" class="text-muted">Overall partnering with 149 customers.  77 JBPs globally with 56 greater than level 2.  Overall JBP score is 2.31 which is 50% increase since Jan 18.  China and Mexico average score > 3.
+                                            <p align="left" class="text-muted">Overall partnering with 145 customers.  73 JBPs globally with 57 greater than level 2.  Overall JBP score is 2.31 which is 59% increase since Jan 18.  China and Mexico score > 3.
 
-Overall YTD NR/HL $131.59, MACO/HL $79.29, and CORES/HL $57.15. CORES/HL Index vs ABI > 100 for 73% of countries.</p>
+Overall YTD NR/HL $129.73, MACO/HL $79.11, and CORES/HL $56.75. CORES/HL Index vs ABI > 100 for 73% of countries.</p>
                                         </div>
 
                                     </div>
@@ -271,7 +260,7 @@ Overall YTD NR/HL $131.59, MACO/HL $79.29, and CORES/HL $57.15. CORES/HL Index v
                             <div class="card-body">
 
 
-                                <h4 class="header-title m-t-0 m-b-30">All eRetail Teams</h4>
+                                <h4 class="header-title m-t-0 m-b-30">All eRetail Teams: October</h4>
 
 
                                 <div class="table-responsive">
@@ -285,7 +274,7 @@ Overall YTD NR/HL $131.59, MACO/HL $79.29, and CORES/HL $57.15. CORES/HL Index v
 
                                             <th>Team</th>
 
-                                            <th>NR (000 USD)</th>
+                                            <th>NR ACT(000 USD)</th>
                                             <th>MS (%)</th>
                                             <th>JBP </th>
                                         </tr>
@@ -293,96 +282,96 @@ Overall YTD NR/HL $131.59, MACO/HL $79.29, and CORES/HL $57.15. CORES/HL Index v
                                         <tbody>
                                         <tr>
                                             <td>UK</td>
-                                            <td>2126</td>
-                                            <td>27.1</td>
+                                            <td>2196</td>
+                                            <td>26.9</td>
 
-                                            <td>2.69</td>
+                                            <td>2.74</td>
 
                                         </tr>
                                         <tr>
                                             <td>China</td>
-                                            <td>8073</td>
-                                            <td>25.6</td>
-                                            <td>3.13</td>
+                                            <td>10565</td>
+                                            <td>29.5</td>
+                                            <td>3.27</td>
 
                                         </tr>
                                         <tr>
                                             <td>USA</td>
-                                            <td>2240</td>
-                                            <td>26.7</td>
-                                            <td>2.00</td>
+                                            <td>2008</td>
+                                            <td>26.4</td>
+                                            <td>1.98</td>
 
                                         </tr>
                                         <tr>
                                             <td>France</td>
-                                            <td>1166</td>
-                                            <td>19.9</td>
-                                            <td>1.70</td>
+                                            <td>1226</td>
+                                            <td>23.3</td>
+                                            <td>1.75</td>
 
                                         </tr>
                                         <tr>
                                             <td>Netherlands</td>
-                                            <td>650</td>
-                                            <td>27.0</td>
-                                            <td>2.53</td>
+                                            <td>646</td>
+                                            <td>23.9</td>
+                                            <td>2.93</td>
 
                                         </tr>
 
                                         <tr>
                                             <td>Brazil</td>
-                                            <td>265</td>
-                                            <td>69.8</td>
-                                            <td>2.56</td>
+                                            <td>289</td>
+                                            <td>56.8</td>
+                                            <td>2.82</td>
 
                                         </tr>
 
                                         <tr>
                                             <td>Mexico</td>
-                                            <td>1253</td>
-                                            <td>79.7</td>
-                                            <td>3.13</td>
+                                            <td>233</td>
+                                            <td>74.2</td>
+                                            <td>3.15</td>
 
                                         </tr>
                                         <tr>
                                             <td>Argentina</td>
-                                            <td>194</td>
-                                            <td>74.9</td>
-                                            <td>1.96</td>
+                                            <td>243</td>
+                                            <td>85.0</td>
+                                            <td>2.00</td>
 
                                         </tr>
                                         <tr>
                                             <td>Belgium</td>
-                                            <td>149</td>
-                                            <td>N/A</td>
-                                            <td>1.67</td>
+                                            <td>124</td>
+                                            <td>0</td>
+                                            <td>1.80</td>
 
                                         </tr>
                                         <tr>
                                             <td>Canada</td>
-                                            <td>203</td>
-                                            <td>38.5</td>
-                                            <td>2.65</td>
+                                            <td>309</td>
+                                            <td>38.0</td>
+                                            <td>2.71</td>
 
                                         </tr>
                                         <tr>
                                             <td>Germany</td>
-                                            <td>106</td>
-                                            <td>N/A</td>
-                                            <td>2.17</td>
+                                            <td>91</td>
+                                            <td>0</td>
+                                            <td>2.30</td>
 
                                         </tr>
                                         <tr>
                                             <td>Chile</td>
-                                            <td>99</td>
-                                            <td>37.6</td>
-                                            <td>1.67</td>
+                                            <td>116</td>
+                                            <td>33.3</td>
+                                            <td>1.90</td>
 
                                         </tr>
                                         <tr>
                                             <td>Uruguay</td>
-                                            <td>7</td>
-                                            <td>N/A</td>
-                                            <td>N/A</td>
+                                            <td>5</td>
+                                            <td>0</td>
+                                            <td>0</td>
 
                                         </tr>
 
