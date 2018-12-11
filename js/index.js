@@ -262,6 +262,29 @@ function positionIcons( icons, iconDistance ) {
 
 
 
+
+//
+//  MENU ITEMS DROPDOWN
+//–––––––––––––––––––––––––––––––––––––
+
+onMenuItemsDropdownChange();
+
+function onMenuItemsDropdownChange() {
+  
+  // Instantiate the menu items to show select.
+  var menuItemsSelect = document.getElementById('menu-items-to-show');
+  
+  // Listen for changes on the select.
+
+    // Get the selected value.
+    var optionValue = 12;
+
+    // Update menu items accordingly.
+    updateMenuItemDisplayValues( optionValue );
+  
+}
+
+
 //
 //  UPDATE MENU ITEMS
 //–––––––––––––––––––––––––––––––––––––
