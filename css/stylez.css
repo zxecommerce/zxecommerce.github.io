@@ -61,15 +61,21 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
-section {
+/*section {
   position: relative;
   padding: 30px 20px;
-  width: 120%;
+  width: 100%;
   min-height: 12em;
   float: left;
   background: #fafafa;
   border-top: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}*/
+
+section {
+  display: relative;
+  padding: 30px 20px;
+  width: 100%;
 }
 section:nth-child(even) {
   border-right: 1px solid #eeeeee;
@@ -136,12 +142,7 @@ input[type="radio"] + label {
   -moz-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-input[type="radio"] + label:before {
-  content: "\f10c";
-  font-family: 'fontawesome';
-  margin-right: 7px;
-  color: #2dceb1;
-}
+
 input[type="radio"] + label:hover {
   cursor: pointer;
 }
@@ -150,7 +151,6 @@ input[type="radio"]:checked + label {
   color: #1f8f7b;
 }
 input[type="radio"]:checked + label:before {
-  content: "\f192";
   color: #1f8f7b;
 }
 

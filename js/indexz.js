@@ -79,16 +79,7 @@
           wrong.push(i);
         }
       }
-      $quizItems.each( function(index) {
-        var $this = $(this);
-        if ($.inArray(index, wrong) !== -1 ) {
-          $this.removeClass('item-correct').addClass('item-incorrect');
-        } else {
-          $this.removeClass('item-incorrect').addClass('item-correct');
-        }
-      });
-
-
+     
       score = ((itemCount - wrong.length) / itemCount).toFixed(2) * 100 + "%";
       $scoreEl.text("You scored a "+(resultz / itemCount)).addClass('new-score');
       $('html,body').animate({scrollTop: 0}, 50);
@@ -122,5 +113,5 @@
 
 
 $(document).emc({
-  key: ["4","4","4","4","4","4","4", "4"]
+  key: []
 });
