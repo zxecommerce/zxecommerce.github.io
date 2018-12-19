@@ -81,8 +81,7 @@
       }
      
       score = ((itemCount - wrong.length) / itemCount).toFixed(2) * 100 + "%";
-      $scoreEl.text("You scored a "+(resultz / itemCount)).addClass('new-score');
-      $('html,body').animate({scrollTop: 0}, 50);
+      $scoreEl.text("Your JBP Score is "+(resultz / itemCount)).addClass('new-score');
     }
     
     // function scoreNormal() {
