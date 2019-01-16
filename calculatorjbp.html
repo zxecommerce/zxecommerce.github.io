@@ -220,7 +220,7 @@ JBP  </title>
             <div class="scrollable">
               <hr>
 <h5>JBP Score Calculator</h5>
-<h6 class="card-category text-info"> Select a level for each pillar to calculate your JBP score <a href="https://drive.google.com/drive/u/1/folders/0ALfKxhpbyZM6Uk9PVA"><u></u></a>                 </h6>
+<h6 class="card-category text-info"> Select a level for each pillar (scroll to see more) to calculate your JBP score <a href="https://drive.google.com/drive/u/1/folders/0ALfKxhpbyZM6Uk9PVA"><u></u></a>                 </h6>
 
             <!DOCTYPE html>
             <html lang="en" >
@@ -306,6 +306,289 @@ JBP  </title>
 
     </div>
 
+    <div class="card card-blog border ">
+
+
+      <div class="card-body">
+        <h6 class="card-category text-success">
+          Click Sort by JBP to See Where Your Team Stands
+          <!-- <u><a target="_blank" href="https://drive.google.com/a/zx-ventures.com/file/d/1xran4xN1egoeZHO8W2PUxHKrtvOIFjHn/view?usp=sharing"> Scoring Rubric</a></u> -->
+
+        </h6>
+        <h6 class="card-category text-success">
+    <!-- <div class="h__iframe" style="border: 0px solid rgb(201, 0, 1); overflow: hidden; margin: 15px auto; max-width: 926px;">
+    <iframe scrolling="no" src="https://zxecommerce.github.io/index.html" style="border: 0px none; margin-left: 0px; margin-top: -4380px;   width:100%;
+      height:5100px;">
+    </iframe>
+    </div> -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+
+
+                <h4 class="header-title m-t-0 m-b-30">All eRetail Teams: November</h4>
+
+
+                <div class="table-responsive">
+                    <table class="table" id="myTable">
+                        <thead>
+
+                        <tr>
+
+                          <span><button type="button" class="btn btn-primary btn-xs" onclick="sortTableNR()">Sort by JBP</button></span>&nbsp;
+
+                            <th>Team</th>
+
+                            <th>JBP </th>
+                            <th># Cust.</th>
+                            <th>#JBPs</th>
+                            <th>#JBPs > 2</th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>UK</td>
+                            <td>2.90</td>
+                            <td>13</td>
+                            <td>8</td>
+                            <td>7</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                              <td>3.50</td>
+                            <td>17</td>
+                            <td>2</td>
+                            <td>2</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>2.10</td>
+                            <td>28</td>
+                            <td>8</td>
+                            <td>5</td>
+
+                        </tr>
+                        <tr>
+                            <td>France</td>
+                            <td>1.80</td>
+                            <td>27</td>
+                            <td>8</td>
+                            <td>4</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Netherlands</td>
+                            <td>3.13</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>3</td>
+
+
+                        </tr>
+
+                        <tr>
+                            <td>Brazil</td>
+                            <td>2.89</td>
+                            <td>15</td>
+                            <td>11</td>
+                            <td>11</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Mexico</td>
+                            <td>3.18</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>8</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Argentina</td>
+                            <td>2.04</td>
+
+                            <td>16</td>
+                            <td>5</td>
+                            <td>3</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Belgium</td>
+                            <td>2.00</td>
+
+                            <td>7</td>
+                            <td>3</td>
+                            <td>2</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Canada</td>
+                            <td>2.41</td>
+
+                            <td>28</td>
+                            <td>6</td>
+                            <td>5</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Germany</td>
+                            <td>2.43</td>
+
+                            <td>8</td>
+                            <td>3</td>
+                            <td>3</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Chile</td>
+                            <td>1.93</td>
+
+                            <td>14</td>
+                            <td>6</td>
+                            <td>3</td>
+
+                        </tr>
+                        <tr>
+                            <td>Uruguay</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <script>
+    function sortTable() {
+var table, rows, switching, i, x, y, shouldSwitch;
+table = document.getElementById("myTable");
+switching = true;
+/*Make a loop that will continue until
+no switching has been done:*/
+while (switching) {
+//start by saying: no switching is done:
+switching = false;
+rows = table.rows;
+/*Loop through all table rows (except the
+first, which contains table headers):*/
+for (i = 1; i < (rows.length - 1); i++) {
+//start by saying there should be no switching:
+shouldSwitch = false;
+/*Get the two elements you want to compare,
+one from current row and one from the next:*/
+x = rows[i].getElementsByTagName("TD")[3];
+y = rows[i + 1].getElementsByTagName("TD")[3];
+//check if the two rows should switch place:
+if (Number(x.innerHTML) < Number(y.innerHTML)) {
+//if so, mark as a switch and break the loop:
+shouldSwitch = true;
+break;
+}
+}
+if (shouldSwitch) {
+/*If a switch has been marked, make the switch
+and mark that a switch has been done:*/
+rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+switching = true;
+}
+}
+}
+</script>
+
+<script>
+function sortTableMS() {
+var table, rows, switching, i, x, y, shouldSwitch;
+table = document.getElementById("myTable");
+switching = true;
+/*Make a loop that will continue until
+no switching has been done:*/
+while (switching) {
+//start by saying: no switching is done:
+switching = false;
+rows = table.rows;
+/*Loop through all table rows (except the
+first, which contains table headers):*/
+for (i = 1; i < (rows.length - 1); i++) {
+//start by saying there should be no switching:
+shouldSwitch = false;
+/*Get the two elements you want to compare,
+one from current row and one from the next:*/
+x = rows[i].getElementsByTagName("TD")[2];
+y = rows[i + 1].getElementsByTagName("TD")[2];
+//check if the two rows should switch place:
+if (Number(x.innerHTML) < Number(y.innerHTML)) {
+//if so, mark as a switch and break the loop:
+shouldSwitch = true;
+break;
+}
+}
+if (shouldSwitch) {
+/*If a switch has been marked, make the switch
+and mark that a switch has been done:*/
+rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+switching = true;
+}
+}
+}
+</script>
+
+<script>
+function sortTableNR() {
+var table, rows, switching, i, x, y, shouldSwitch;
+table = document.getElementById("myTable");
+switching = true;
+/*Make a loop that will continue until
+no switching has been done:*/
+while (switching) {
+//start by saying: no switching is done:
+switching = false;
+rows = table.rows;
+/*Loop through all table rows (except the
+first, which contains table headers):*/
+for (i = 1; i < (rows.length - 1); i++) {
+//start by saying there should be no switching:
+shouldSwitch = false;
+/*Get the two elements you want to compare,
+one from current row and one from the next:*/
+x = rows[i].getElementsByTagName("TD")[1];
+y = rows[i + 1].getElementsByTagName("TD")[1];
+//check if the two rows should switch place:
+if (Number(x.innerHTML) < Number(y.innerHTML)) {
+//if so, mark as a switch and break the loop:
+shouldSwitch = true;
+break;
+}
+}
+if (shouldSwitch) {
+/*If a switch has been marked, make the switch
+and mark that a switch has been done:*/
+rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+switching = true;
+}
+}
+}
+</script>
+
+
+</div>
+</div>
 
 
 
