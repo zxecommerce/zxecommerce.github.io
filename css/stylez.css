@@ -94,39 +94,8 @@ section.item-incorrect:before {
   border: 35px solid;
   border-color: transparent #ff5c61 #ff5c61 transparent;
 }
-section.item-incorrect:after {
-  line-height: 1.4;
-  position: absolute;
-  z-index: 499;
-  font-family: 'fontawesome';
-  content: "";
-  bottom: 0;
-  right: 7px;
-  font-size: 1.9em;
-  color: #ff383e;
-}
-section.item-correct:before {
-  position: absolute;
-  z-index: 399;
-  bottom: 0;
-  right: 0;
-  content: "";
-  height: 0;
-  width: 0;
-  border: 35px solid;
-  border-color: transparent #48d7bd #48d7bd transparent;
-}
-section.item-correct:after {
-  line-height: 1.4;
-  position: absolute;
-  z-index: 499;
-  font-family: 'fontawesome';
-  content: "";
-  bottom: 0;
-  right: 7px;
-  font-size: 1.9em;
-  color: #2dceb1;
-}
+
+
 
 input[type="radio"] {
   position: absolute;
