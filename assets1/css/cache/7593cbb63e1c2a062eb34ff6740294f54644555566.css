@@ -1,0 +1,720 @@
+@charset "UTF-8";
+div.page-body h2.section-subtitle {
+    color: #0658ce;
+    font-family: 'Lobster', 'Montserrat', 'Arial', sans-serif;
+    font-size: 1.9em;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.8em;
+    text-align: center
+}
+
+div.page-body li {
+    padding-bottom: 1em
+}
+
+div.page-body li:last-child {
+    padding-bottom: 0
+}
+
+div.page-body .font-regular {
+    display: inline-block;
+    font-family: 'Montserrat', 'Open Sans', 'Arial' !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.3em
+}
+
+.page-agenda .page-body {
+    padding-bottom: 3em
+}
+
+.page-agenda .page-content a:active,
+.page-agenda .page-content .button:active,
+.page-agenda .page-content button:focus,
+.page-agenda .page-content .button:focus,
+.page-agenda .page-content button:hover,
+.page-agenda .page-content .button:hover {
+    outline: none !important
+}
+
+.page-agenda .row.no-gutters {
+    margin-left: 0 !important;
+    margin-right: 0 !important
+}
+
+.page-agenda .row.no-gutters [class^="col-"],
+.page-agenda .row.no-gutters [class*=" col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.m-b-neg2 {
+    margin-bottom: -2em !important
+}
+
+div.agenda-section-container {
+    border-top: 1px dashed #cad1d9;
+    margin-top: 2em;
+    padding-top: 1em
+}
+
+div.agenda-section-container h2.section-title {
+    color: #000 !important;
+    font-family: 'Lobster', 'Open Sans', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 1.75em;
+    text-align: center
+}
+
+div.agenda-section-container div.section-body {
+    margin-bottom: 2em
+}
+
+div.agenda-section-container div.section-body a:active,
+div.agenda-section-container div.section-body .button:active,
+div.agenda-section-container div.section-body button:focus,
+div.agenda-section-container div.section-body .button:focus,
+div.agenda-section-container div.section-body button:hover,
+div.agenda-section-container div.section-body .button:hover {
+    outline: none !important
+}
+
+div.section-body div.section-timeslot {
+    border-top: 1px dashed #cad1d9;
+    font-size: 1em;
+    font-family: 'Montserrat', 'Open Sans', 'Arial', sans-serif;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: left
+}
+
+div.section-body div.section-timeslot.bottom-border {
+    border-bottom: 1px dashed #cad1d9
+}
+
+div.section-body div.section-timeslot.section-timeslot-highlighted {
+    background-color: #f4f5f5
+}
+
+div.section-body div.section-timeslot div.timeslot-time {
+    color: #ef5a2b;
+    font-family: inherit;
+    font-size: 1em;
+    padding-left: 2em;
+    text-align: left;
+    text-transform: uppercase
+}
+
+div.section-body div.section-timeslot div.timeslot-time span {
+    font-weight: 600;
+    letter-spacing: 0.075em
+}
+
+div.section-body div.section-timeslot div.timeslot-time span.location {
+    color: #000;
+    display: block;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none
+}
+
+div.section-body div.section-timeslot div.timeslot-details {
+    font-size: 1em;
+    padding-left: 1.5em !important
+}
+
+div.section-body div.section-timeslot div.timeslot-details span {
+    font-weight: 600
+}
+
+div.section-body div.section-timeslot div.timeslot-details p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0
+}
+
+div.section-body div.section-timeslot div.timeslot-details a {
+    text-decoration: underline
+}
+
+div.section-body div.section-timeslot div.timeslot-details a:hover {
+    text-decoration: none
+}
+
+div.section-body div.section-timeslot div.timeslot-logo img {
+    height: 50px;
+    max-width: 300px;
+    width: auto
+}
+
+div.section-body div.session-body {
+    margin-bottom: 2em;
+    text-align: left
+}
+
+div.section-body p {
+    margin: 0;
+    padding: 0
+}
+
+div.section-body div.sessions-set-title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 1.25em 0
+}
+
+div.section-body div.session-title {
+    color: #000 !important;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 1em 0.75em 0;
+    text-align: left
+}
+
+div.section-body div.session-title.regular {
+    margin-bottom: 0
+}
+
+div.section-body div.session-title div.pusher {
+    margin-top: 100px
+}
+
+div.section-body div.session-title div.pusher-mini {
+    margin-top: 80px
+}
+
+div.section-body div.session-title span {
+    color: #ef5a2b;
+    display: block;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase
+}
+
+div.section-body .row-height {
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+    width: 100%
+}
+
+div.section-body .col-height {
+    display: table-cell;
+    float: none;
+    height: 100%
+}
+
+div.section-body .col-top {
+    vertical-align: top
+}
+
+div.section-body .col-middle {
+    vertical-align: middle
+}
+
+div.section-body .col-bottom {
+    vertical-align: bottom
+}
+
+div.section-body .inside {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+div.section-body .inside-full-height {
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+div.section-body .content {
+    padding: 0
+}
+
+div.section-body div.session-track.track-aqua {
+    background-color: rgba(49, 181, 168, 0.15)
+}
+
+
+
+div.section-body div.session-track.track-sky {
+    background-color: rgba(27, 188, 237, 0.15)
+}
+
+div.section-body div.session-track.track-mandarin {
+    background-color: rgba(255, 134, 14, 0.15)
+}
+
+div.section-body div.session-track.track-red {
+    background-color: rgba(166, 35, 60, 0.10)
+}
+
+div.section-body div.session-track.track-rila {
+    background-color: rgba(166, 35, 60, 0.10)
+}
+
+div.section-body div.session-track.track-fmi {
+    background-color: rgba(0, 177, 115, 0.10)
+}
+
+div.section-body div.session-track div.session-track-header {
+    height: 100px;
+    padding: 0.75em 1em;
+    position: relative
+}
+
+
+div.section-body div.session-track.track-aqua div.session-track-header {
+    background-color: rgba(49, 181, 168, 0.75);
+    border-bottom: 6px solid rgba(49, 181, 168, 1)
+}
+
+div.section-body div.session-track.track-sky div.session-track-header {
+    background-color: rgba(27, 188, 237, 0.75);
+    border-bottom: 6px solid rgba(27, 188, 237, 1)
+}
+
+div.section-body div.session-track.track-mandarin div.session-track-header {
+    background-color: rgba(255, 134, 14, 0.75);
+    border-bottom: 6px solid rgba(255, 134, 14, 1)
+}
+
+
+div.section-body div.session-track.track-red div.session-track-header {
+    background-color: rgba(228, 167, 178, 1);
+    border-bottom: 6px solid rgba(195, 132, 144, 1)
+}
+
+div.section-body div.session-track.track-rila div.session-track-header {
+    background-color: rgba(166, 35, 60, 1);
+    border-bottom: 6px solid rgba(189, 12, 46, 1)
+}
+
+div.section-body div.session-track.track-fmi div.session-track-header {
+    background-color: rgba(0, 177, 115, 1);
+    border-bottom: 6px solid rgba(0, 197, 128, 1)
+}
+
+div.section-body div.session-track div.session-track-header p.track-title {
+    color: #000;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600
+}
+
+div.section-body div.session-track div.session-track-header p.track-subtitle {
+    color: #FFF;
+    font-family: inherit;
+    font-size: 1.02em;
+    font-weight: 600;
+    line-height: 1.4
+}
+
+div.section-body div.session-track div.session-track-header p.track-posttitle {
+    bottom: 0.6em;
+    color: #FFF;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    left: 1em;
+    position: absolute
+}
+
+div.section-body div.session-track div.session-track-header a.track-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 0.5em;
+    outline: none !important;
+    padding: 0.25em 0.6em;
+    text-decoration: none !important;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+div.section-body div.session-track div.session-track-header a.track-button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none !important
+}
+
+div.section-body div.session-track.track-aqua div.session-track-header a.track-button:hover {
+    color: rgba(49, 181, 168, 1)
+}
+
+div.section-body div.session-track.track-sky div.session-track-header a.track-button:hover {
+    color: rgba(27, 188, 237, 1)
+}
+
+div.section-body div.session-track.track-mandarin div.session-track-header a.track-button:hover {
+    color: rgba(255, 134, 14, 1)
+}
+
+
+
+div.section-body div.session-track.track-red div.session-track-header a.track-button:hover {
+    color: rgba(215, 63, 92, 1)
+}
+
+div.section-body div.session-track.track-rila div.session-track-header a.track-button:hover {
+    color: rgba(215, 63, 92, 1)
+}
+
+div.section-body div.session-track.track-fmi div.session-track-header a.track-button:hover {
+    color: rgba(0, 216, 140, 1)
+}
+
+div.section-body div.session-track div.session-track-header.track-header-thin {
+    height: auto !important;
+    padding: 0.75em 1em !important
+}
+div.section-body div.session-track div.session-track-header.track-header-med {
+    height:40px;
+    padding: 0.75em 1em !important
+}
+
+div.section-body div.session-track div.session-track-header.track-header-mini {
+    height: 80px;
+    padding: 0.75em 1em !important
+}
+
+div.section-body div.session-track.track-aqua div.modal-header {
+    border-bottom: 6px solid rgba(49, 181, 168, 1)
+}
+
+div.section-body div.session-track.track-aqua h4.modal-title {
+    color: rgba(49, 181, 168, 1) !important
+}
+
+div.section-body div.session-track.track-sky div.modal-header {
+    border-bottom: 6px solid rgba(27, 188, 237, 1)
+}
+
+div.section-body div.session-track.track-sky h4.modal-title {
+    color: rgba(27, 188, 237, 1) !important
+}
+
+div.section-body div.session-track.track-mandarin div.modal-header {
+    border-bottom: 6px solid rgba(255, 134, 14, 1)
+}
+
+
+
+div.section-body div.session-track.track-mandarin h4.modal-title {
+    color: rgba(255, 134, 14, 1) !important
+}
+
+div.section-body div.session-track.track-red div.modal-header {
+    border-bottom: 6px solid rgba(166, 35, 60, 1)
+}
+
+div.section-body div.session-track.track-red h4.modal-title {
+    color: rgba(166, 35, 60, 1) !important
+}
+
+div.section-body div.session-track.track-rila div.modal-header {
+    border-bottom: 6px solid rgba(166, 35, 60, 1)
+}
+
+div.section-body div.session-track.track-rila h4.modal-title {
+    color: rgba(166, 35, 60, 1) !important
+}
+
+div.section-body div.session-track.track-fmi div.modal-header {
+    border-bottom: 6px solid rgba(0, 177, 115, 1)
+}
+
+div.section-body div.session-track.track-fmi h4.modal-title {
+    color: rgba(0, 177, 115, 1) !important
+}
+
+div.section-body div.session-track div.modal-body p {
+    margin-bottom: 0.75em
+}
+
+div.section-body div.session-track div.session-track-content {
+    color: #000;
+    padding: 1em
+}
+
+div.section-body div.session-track div.session-track-content p {
+    font-size: 0.9em
+}
+
+div.section-body div.session-track div.session-track-content p.session-title {
+    font-size: 0.95em;
+    font-weight: 500
+}
+
+div.section-body div.session-track div.session-track-content p.session-title.regular {
+    border-bottom: 0;
+    padding-bottom: 0
+}
+
+div.section-body div.session-track.track-aqua div.session-track-content p.session-title {
+    border-color: rgba(49, 181, 168, 0.75)
+}
+
+div.section-body div.session-track.track-sky div.session-track-content p.session-title {
+    border-color: rgba(27, 188, 237, 0.75)
+}
+
+div.section-body div.session-track.track-mandarin div.session-track-content p.session-title {
+    border-color: rgba(255, 134, 14, 0.75)
+}
+
+div.section-body div.session-track.track-red div.session-track-content p.session-title {
+    border-color: rgba(166, 35, 60, 0.75)
+}
+
+div.section-body div.session-track.track-rila div.session-track-content p.session-title {
+    border-color: rgba(166, 35, 60, 0.75)
+}
+
+div.section-body div.session-track.track-fmi div.session-track-content p.session-title {
+    border-color: rgba(0, 177, 115, 0.75)
+}
+
+div.section-body div.session-track div.session-track-content a.session-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 0.5em;
+    outline: none !important;
+    padding: 0.25em 0.6em;
+    text-decoration: none !important;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+div.section-body div.session-track div.session-track-content a.session-button:hover {
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none !important
+}
+
+div.section-body div.session-track.track-aqua div.session-track-content a.session-button:hover {
+    background-color: rgba(49, 181, 168, 1)
+}
+
+div.section-body div.session-track.track-sky div.session-track-content a.session-button:hover {
+    background-color: rgba(27, 188, 237, 1)
+}
+
+div.section-body div.session-track.track-mandarin div.session-track-content a.session-button:hover {
+    background-color: rgba(255, 134, 14, 1)
+}
+
+
+div.section-body div.session-track.track-red div.session-track-content a.session-button:hover {
+    background-color: rgba(166, 35, 60, 1)
+}
+
+div.section-body div.session-track.track-rila div.session-track-content a.session-button:hover {
+    background-color: rgba(166, 35, 60, 1)
+}
+
+div.section-body div.session-track.track-fmi div.session-track-content a.session-button:hover {
+    background-color: rgba(0, 177, 115, 1)
+}
+
+div.section-body div.session-track div.session-track-content div.session-speakers-list {
+    margin-top: 0.75em;
+    word-wrap: break-word
+}
+
+div.section-body div.session-track div.session-track-content div.session-speakers-list p {
+    font-size: 0.9em !important;
+    border-top: 1px dashed #cad1d9;
+    line-height: 1.4;
+    margin-bottom: 0.4em;
+    padding-top: 0.4em
+}
+
+div.section-body div.session-track div.session-track-content div.session-speakers-list p a {
+    color: #000;
+    text-decoration: underline
+}
+
+div.section-body div.session-track div.session-track-content div.session-speakers-list p a:hover {
+    color: #555;
+    text-decoration: none
+}
+
+.btn-rila {
+    background-color: #a6233c;
+    border-color: #a6233c;
+    color: #FFF !important
+}
+
+.btn-rila:hover,
+.btn-rila:focus,
+.btn-rila.focus,
+.btn-rila:active,
+.btn-rila.active {
+    background-color: #c62a48;
+    border-color: #c62a48;
+    color: #FFF !important
+}
+
+.btn-rila:active,
+.btn-rila.active,
+.open>.dropdown-toggle.btn-rila {
+    background-image: none
+}
+
+.btn-rila.btn-outline {
+    color: #a6233c !important
+}
+
+.btn-rila.btn-outline:hover,
+.btn-rila.btn-outline:focus,
+.btn-rila.btn-outline.focus,
+.btn-rila.btn-outline:active,
+.btn-rila.btn-outline.active {
+    background-color: #a6233c !important;
+    color: #FFF !important
+}
+
+.btn-fmi {
+    background-color: #00b173;
+    border-color: #00b173;
+    color: #FFF !important
+}
+
+.btn-fmi:hover,
+.btn-fmi:focus,
+.btn-fmi.focus,
+.btn-fmi:active,
+.btn-fmi.active {
+    background-color: #00d88c;
+    border-color: #00d88c;
+    color: #FFF !important
+}
+
+.btn-fmi:active,
+.btn-fmi.active,
+.open>.dropdown-toggle.btn-fmi {
+    background-image: none
+}
+
+.btn-fmi.btn-outline {
+    color: #00b173 !important
+}
+
+.btn-fmi.btn-outline:hover,
+.btn-fmi.btn-outline:focus,
+.btn-fmi.btn-outline.focus,
+.btn-fmi.btn-outline:active,
+.btn-fmi.btn-outline.active {
+    background-color: #00b173 !important;
+    color: #FFF !important
+}
+
+@charset "UTF-8";
+@media (max-width: 767px) {
+    div.agenda-section-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+@media (max-width: 767px) {
+    div.section-body div.session-track div.session-track-header {
+        height: auto;
+        padding-bottom: 30px
+    }
+}
+
+@media (min-width: 992px) {
+    div.section-body .row-md-height {
+        display: table;
+        height: 100%;
+        table-layout: fixed;
+        width: 100%
+    }
+    div.section-body .col-md-height {
+        display: table-cell;
+        float: none;
+        height: 100%
+    }
+    div.section-body .col-md-top {
+        vertical-align: top
+    }
+    div.section-body .col-md-middle {
+        vertical-align: middle
+    }
+    div.section-body .col-md-bottom {
+        vertical-align: bottom
+    }
+}
+
+@media (min-width: 1200px) {
+    div.section-body .row-lg-height {
+        display: table;
+        height: 100%;
+        table-layout: fixed;
+        width: 100%
+    }
+    div.section-body .col-lg-height {
+        display: table-cell;
+        float: none;
+        height: 100%
+    }
+    div.section-body .col-lg-top {
+        vertical-align: top
+    }
+    div.section-body .col-lg-middle {
+        vertical-align: middle
+    }
+    div.section-body .col-lg-bottom {
+        vertical-align: bottom
+    }
+}
+
+@media (min-width: 991px) {
+    div.section-body div.session-body {
+        margin-bottom: 0;
+        border-bottom: 2px solid #FFF
+    }
+    div.section-body div.session-track div.session-track-header.track-header-thin {
+        display: none
+    }
+}
+
+@media (max-width: 991px) {
+    div.section-body div.session-title {
+        text-align: center
+    }
+    div.section-body div.section-timeslot div.timeslot-details {
+        padding-left: 2em !important
+    }
+}
+
+@charset "UTF-8";
