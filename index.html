@@ -1,1785 +1,971 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Welcome to the Zx eRetail Dashboard">
-        <meta name="author" content="Coderthemes">
 
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <title>eCommerce eRetail - Update</title>
 
-        <!--Morris Chart CSS -->
-
-        <link href="https://dl.dropbox.com/s/l3843ok8h9d496h/bootstrap.min.css?dl=0" rel="stylesheet" type="text/css" />
-        <link href="https://dl.dropbox.com/s/4omjwh7e1mxuqxf/icons.css?dl=0" rel="stylesheet" type="text/css" />
-        <link href="https://dl.dropbox.com/s/yn0cmq0icz4ioki/style.css?dl=0" rel="stylesheet" type="text/css" />
-
-        <script src="assets/js/modernizr.min.js"></script>
-
-    </head>
-
-
-    <body>
-
-
-
-<script>
-function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
-  return false;
-}
-</script>
-</head>
-<body>
-
-  <div id="Page1">
-
-        <!-- Navigation Bar-->
-        <header id="topnav">
-            <div class="topbar-main">
-                <div class="container-fluid">
-
-                    <!-- LOGO -->
-                    <div class="topbar-left">
-                        <a href="index.html" class="logo">
-                            Zx<span class="text-custom">eComm</span>
-                            <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
-                        </a>
-                    </div>
-                    <!-- End Logo container-->
-
-                    <div class="navbar-custom navbar-left">
-                        <div id="navigation">
-                            <!-- Navigation Menu-->
-                            <ul class="navigation-menu">
-                                <li>
-                                    <a href="index.html">
-                                        <span> eRetail Monthly Reports </span> </a>
-                                </li>
-
-                                    </ul>
-                                </li>
-
-
-
-
-
-                            </ul>
-                            <!-- End navigation menu  -->
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-            </div>
-
-
-        </header>
-        <!-- End Navigation Bar-->
-
-
-        <div class="wrapper">
-            <div class="container-fluid">
-
-                <!-- Page-Title -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="nav nav-pills nav-pills-custom float-right m-t-25">
-                            <li class="nav-item">
-                              <a class="nav-link" id="linkid" href="september.html">September '18'</a>  </li>
-
-                            <li class="nav-item">
-                              <a class="nav-link" href="october.html">October '18</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="november.html">November '18</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active" href="december.html">December '18</a>
-                            </li>
-
-                        </ul>
-
-                        <h4 class="page-title">Dashboard</h4>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="card-body">
-
-
-                                <h4 class="header-title m-t-0">Net Revenue YTD</h4>
-
-
-
-                                <div class="row text-center m-t-10">
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">200</h3>$MM
-                                        <p class="text-muted">Overall Net Revenue</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">5</h3>%
-                                        <p class="text-muted">Exceeded Budget</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">64</h3>%
-                                        <p class="text-muted">Exceeded Last Year</p>
-                                    </div>
-                                    <div class="row text-center m-t-30">
-                                        <div class="col-12">
-                                            <p align="left" class="text-muted">Overall Net Revenue of $199.6MM YTD exceeding budget by 5% and last year by 64%.  67% of countries delivered full year > BU with exception of China, UK, France, and Argentina.  All markets except Uruguay delivered full year > last year.</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <button type="button" class="btn btn-primary btn-md" onclick="window.location.href='december_NR.html'">Show Charts</button>
-
-
-
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <h4 class="header-title m-t-0">Market Share YTD</h4>
-
-                                <div class="row text-center m-t-30">
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">31.7</h3>%
-                                        <p class="text-muted"> Market Share <br></p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">3.6</h3>pp
-                                        <p class="text-muted">VS LY</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">1.4</h3>pp
-                                        <p class="text-muted">VS BU</p>
-                                    </div>
-                                    <div class="row text-center m-t-30">
-                                        <div class="col-12">
-                                            <p align="left" class="text-muted">Overall share 31.7% YTD exceeding fair share and +3.6pp vs LY with 1.4pp vs BU.  80% of countries delivered full year > BU with exception of UK, and France.  All markets except UK and France delivered full year > last year.</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <button type="button" class="btn btn-primary btn-md" onclick="window.location.href='december_MS.html'">Show Charts</button>
-
-
-                                <!-- <div id="morris-bar-example" style="height: 280px;" class="m-t-10"></div> -->
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="card-body">
-
-
-                                <h4 class="header-title m-t-0">JBP Score & Profitability YTD</h4>
-
-
-
-                                <div class="row text-center m-t-30">
-                                    <div class="col-4">
-                                        <h3 data-plugin="">151</h3>
-                                        <p class="text-muted">Customers</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="">71 </h3>
-                                        <p class="text-muted">JBPs Globally</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h3 data-plugin="counterup">2.59</h3>
-                                        <p class="text-muted">Overall JBP Score </p>
-                                    </div>
-                                    <div class="row text-center m-t-30">
-                                        <div class="col-12">
-                                          <p align="left" class="text-muted">Overall partnering with 151 customers.  71 JBPs globally with 56 greater than level 2.  Overall JBP score is 2.59 which is a 61.8% increase since Jan 18.  China, Brazil, Mexico, and Netherlands scored > 3.
-
-Overall YTD NR/HL $129.31, MACO/HL $78.79, and CORES/HL $56.93. CORES/HL Index vs ABI > 100 for 82% of countries.</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <button type="button" class="btn btn-primary btn-md" onclick="window.location.href='december_JBP.html'">Show Charts</button>
-
-
-                                <!-- <div class="text-center m-t-10">
-                                    <div id="morris-donut-example" style="height: 245px;"></div>
-                                    <ul class="list-inline chart-detail-list m-b-0">
-                                        <li class="list-inline-item">
-                                            <h5><i class="fa fa-circle m-r-5" style="color: #42a5f5;"></i>Series A</h5>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <h5><i class="fa fa-circle m-r-5" style="color: #64b5f6;"></i>Series B</h5>
-                                        </li>
-                                    </ul>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-
-
-
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-
-
-
-                  <div class="col-xl-6">
-                      <div class="card">
-                          <div class="card-body">
-
-                              <h4 class="header-title m-t-0">Top Accounts</h4>
-                              <p class="text-muted">By Net Revenue (000)</p>
-
-                  <div class="row">
-
-                  <div class="table-responsive">
-                  <table class="table">
-                  <thead>
-                  <tr>
-                  <th>Account</th>
-                  <th>NR Total</th>
-                  <th>NR vs. LY</th>
-
-                  </tr>
-                  </thead>
-                  <tbody>
-
-                  <tr>
-
-                  <td><ul class="list-group m-b-0 user-list">
-                    <li class="list-group-item">
-                        <a href="#" class="user-list-item">
-                          <div class="avatar text-center">1.
-                          </div>
-                            <div class="avatar">
-                                <img src="assets/images/users/china.jpg" alt="">
-                            </div>
-                            <div class="user-desc">
-                                <span float-right class="name">JD</span>
-                                <p class="text-muted">China</p>
-
-
-
-                            </div>
-                        </a>
-                    </li></ul></td>
-
-                    <td><ul class="list-group m-b-0 user-list">
-                        <li class="list-group-item">
-
-                          <div class="user-desc">
-                            <a href="#" class="user-list-item">
-
-                              <span float-right class="name">$6,241</span>
-
-                            </a>
-
-
-
-                          </div>
-
-                        </li></ul></td>
-
-                  <td><ul class="list-group m-b-0 user-list">
-                  <li class="list-group-item">
-
-                  <div class="user-desc">
-                  <a href="#" class="user-list-item">
-
-                    <span float-right class="name">262%</span>
-
-                  </a>
-
-
-
-                  </div>
-
-                  </li></ul></td>
-
-                  </tr>
-
-                  <tr>
-
-                    <td><ul class="list-group m-b-0 user-list">
-                        <li class="list-group-item">
-                            <a href="#" class="user-list-item">
-                              <div class="avatar text-center">2.
-                              </div>
-                                <div class="avatar">
-                                    <img src="assets/images/users/china.jpg" alt="">
-                                </div>
-                                <div class="user-desc">
-                                    <span float-right class="name">Tmall</span>
-                                    <p class="text-muted">China</p>
-
-
-
-                                </div>
-                            </a>
-                        </li></ul></td>
-
-                        <td><ul class="list-group m-b-0 user-list">
-                            <li class="list-group-item">
-
-                              <div class="user-desc">
-                                <a href="#" class="user-list-item">
-
-                                  <span float-right class="name">$3,308</span>
-
-                                </a>
-
-
-
-                              </div>
-
-                            </li></ul></td>
-
-                  <td><ul class="list-group m-b-0 user-list">
-                  <li class="list-group-item">
-
-                    <div class="user-desc">
-                      <a href="#" class="user-list-item">
-
-                        <span float-right class="name">66%</span>
-
-                      </a>
-
-
-
-                    </div>
-
-                  </li></ul></td>
-
-                  </tr>
-                  <tr>
-
-                        <td><ul class="list-group m-b-0 user-list">
-                            <li class="list-group-item">
-                                <a href="#" class="user-list-item">
-                                  <div class="avatar text-center">3.
-                                  </div>
-                                    <div class="avatar">
-                                        <img src="assets/images/users/UK.png" alt="">
-                                    </div>
-                                    <div class="user-desc">
-                                        <span float-right class="name">Tesco</span>
-                                        <p class="text-muted">UK</p>
-
-
-
-                                    </div>
-                                </a>
-                            </li></ul></td>
-
-                            <td><ul class="list-group m-b-0 user-list">
-                                <li class="list-group-item">
-
-                                  <div class="user-desc">
-                                    <a href="#" class="user-list-item">
-
-                                      <span float-right class="name">$1,603</span>
-
-                                    </a>
-
-
-
-                                  </div>
-
-                                </li></ul></td>
-
-                  <td><ul class="list-group m-b-0 user-list">
-                      <li class="list-group-item">
-
-                        <div class="user-desc">
-                          <a href="#" class="user-list-item">
-
-                            <span float-right class="name">11%</span>
-
-                          </a>
-
-
-
-                        </div>
-
-                      </li></ul></td>
-
-                    </tr>
-
-                        <tr>
-
-                                <td><ul class="list-group m-b-0 user-list">
-                                    <li class="list-group-item">
-                                        <a href="#" class="user-list-item">
-                                          <div class="avatar text-center">5.
-                                          </div>
-                                            <div class="avatar">
-                                                <img src="assets/images/users/france.png" alt="">
-                                            </div>
-                                            <div class="user-desc">
-                                                <span float-right class="name">Total</span>
-                                                <p class="text-muted">France</p>
-
-
-
-                                            </div>
-                                        </a>
-                                    </li></ul></td>
-
-                                    <td><ul class="list-group m-b-0 user-list">
-                                        <li class="list-group-item">
-
-                                          <div class="user-desc">
-                                            <a href="#" class="user-list-item">
-
-                                              <span float-right class="name">$1,293</span>
-
-                                            </a>
-
-
-
-                                          </div>
-
-                                        </li></ul></td>
-
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">6%</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-
-                            </tr>
-
-                            <tr>
-
-                                    <td><ul class="list-group m-b-0 user-list">
-                                        <li class="list-group-item">
-                                            <a href="#" class="user-list-item">
-                                              <div class="avatar text-center">5.
-                                              </div>
-                                                <div class="avatar">
-                                                    <img src="assets/images/users/uk.png" alt="">
-                                                </div>
-                                                <div class="user-desc">
-                                                    <span float-right class="name">Asda</span>
-                                                    <p class="text-muted">UK</p>
-
-
-
-                                                </div>
-                                            </a>
-                                        </li></ul></td>
-
-                                        <td><ul class="list-group m-b-0 user-list">
-                                            <li class="list-group-item">
-
-                                              <div class="user-desc">
-                                                <a href="#" class="user-list-item">
-
-                                                  <span float-right class="name">$1,102</span>
-
-                                                </a>
-
-
-
-                                              </div>
-
-                                            </li></ul></td>
-
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">-5%</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-
-                                </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  </tbody>
-                  </table>
-                  </div>
-                  </div>
-
-
-
-
-                          </div>
-                      </div>
-                  </div><!-- end col -->
-
-
-
-
-
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <h4 class="header-title m-t-0">Top Accounts</h4>
-                                <p class="text-muted">By NR vs. LY</p>
-
-<div class="row">
-
-  <div class="table-responsive">
-      <table class="table">
-          <thead>
-          <tr>
-              <th>Account</th>
-              <th>NR vs. LY</th>
-              <th>NR (000)</th>
-
-          </tr>
-          </thead>
-          <tbody>
-
-                  <tr>
-
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-                                  <a href="#" class="user-list-item">
-                                    <div class="avatar text-center">1.
-                                    </div>
-                                      <div class="avatar">
-                                          <img src="assets/images/users/brazil.jpg" alt="">
-                                      </div>
-                                      <div class="user-desc">
-                                          <span float-right class="name">Sonda</span>
-                                          <p class="text-muted">Brazil</p>
-
-
-
-                                      </div>
-                                  </a>
-                              </li></ul></td>
-
-
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">828%</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-                    <td><ul class="list-group m-b-0 user-list">
-                        <li class="list-group-item">
-
-                          <div class="user-desc">
-                            <a href="#" class="user-list-item">
-
-                              <span float-right class="name">$84</span>
-
-                            </a>
-
-
-
-                          </div>
-
-                        </li></ul></td>
-
-                      </tr>
-                      <tr>
-
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-                                      <a href="#" class="user-list-item">
-                                        <div class="avatar text-center">2.
-                                        </div>
-                                          <div class="avatar">
-                                              <img src="assets/images/users/china.jpg" alt="">
-                                          </div>
-                                          <div class="user-desc">
-                                              <span float-right class="name">SUNING</span>
-                                              <p class="text-muted">China</p>
-
-
-
-                                          </div>
-                                      </a>
-                                  </li></ul></td>
-
-
-                                  <td><ul class="list-group m-b-0 user-list">
-                                      <li class="list-group-item">
-
-                                        <div class="user-desc">
-                                          <a href="#" class="user-list-item">
-
-                                            <span float-right class="name">687%</span>
-
-                                          </a>
-
-
-
-                                        </div>
-
-                                      </li></ul></td>
-                        <td><ul class="list-group m-b-0 user-list">
-                            <li class="list-group-item">
-
-                              <div class="user-desc">
-                                <a href="#" class="user-list-item">
-
-                                  <span float-right class="name">$681</span>
-
-                                </a>
-
-
-
-                              </div>
-
-                            </li></ul></td>
-
-                          </tr>
-                          <tr>
-
-                                  <td><ul class="list-group m-b-0 user-list">
-                                      <li class="list-group-item">
-                                          <a href="#" class="user-list-item">
-                                            <div class="avatar text-center">3.
-                                            </div>
-                                              <div class="avatar">
-                                                  <img src="assets/images/users/argentina.jpg" alt="">
-                                              </div>
-                                              <div class="user-desc">
-                                                  <span float-right class="name">Walmart</span>
-                                                  <p class="text-muted">Argentina</p>
-
-
-
-                                              </div>
-                                          </a>
-                                      </li></ul></td>
-
-                                      <td><ul class="list-group m-b-0 user-list">
-                                          <li class="list-group-item">
-
-                                            <div class="user-desc">
-                                              <a href="#" class="user-list-item">
-
-                                                <span float-right class="name">443%</span>
-
-                                              </a>
-
-
-
-                                            </div>
-
-                                          </li></ul></td>
-
-
-
-                            <td><ul class="list-group m-b-0 user-list">
-                                <li class="list-group-item">
-
-                                  <div class="user-desc">
-                                    <a href="#" class="user-list-item">
-
-                                      <span float-right class="name">$123</span>
-
-                                    </a>
-
-
-
-                                  </div>
-
-                                </li></ul></td>
-
-                              </tr>
-
-                              <tr>
-
-                                      <td><ul class="list-group m-b-0 user-list">
-                                          <li class="list-group-item">
-                                              <a href="#" class="user-list-item">
-                                                <div class="avatar text-center">4.
-                                                </div>
-                                                  <div class="avatar">
-                                                      <img src="assets/images/users/chile.png" alt="">
-                                                  </div>
-                                                  <div class="user-desc">
-                                                      <span float-right class="name">Cornershop</span>
-                                                      <p class="text-muted">Chile</p>
-
-
-
-                                                  </div>
-                                              </a>
-                                          </li></ul></td>
-
-                                          <td><ul class="list-group m-b-0 user-list">
-                                              <li class="list-group-item">
-
-                                                <div class="user-desc">
-                                                  <a href="#" class="user-list-item">
-
-                                                    <span float-right class="name">399%</span>
-
-                                                  </a>
-
-
-
-                                                </div>
-
-                                              </li></ul></td>
-
-                                <td><ul class="list-group m-b-0 user-list">
-                                    <li class="list-group-item">
-
-                                      <div class="user-desc">
-                                        <a href="#" class="user-list-item">
-
-                                          <span float-right class="name">$124</span>
-
-                                        </a>
-
-
-
-                                      </div>
-
-                                    </li></ul></td>
-
-                                  </tr>
-
-                                  <tr>
-
-                                          <td><ul class="list-group m-b-0 user-list">
-                                              <li class="list-group-item">
-                                                  <a href="#" class="user-list-item">
-                                                    <div class="avatar text-center">5.
-                                                    </div>
-                                                      <div class="avatar">
-                                                          <img src="assets/images/users/china.jpg" alt="">
-                                                      </div>
-                                                      <div class="user-desc">
-                                                          <span float-right class="name">1919.0</span>
-                                                          <p class="text-muted">China</p>
-
-
-
-                                                      </div>
-                                                  </a>
-                                              </li></ul></td>
-
-                                              <td><ul class="list-group m-b-0 user-list">
-                                                  <li class="list-group-item">
-
-                                                    <div class="user-desc">
-                                                      <a href="#" class="user-list-item">
-
-                                                        <span float-right class="name">389%</span>
-
-                                                      </a>
-
-
-
-                                                    </div>
-
-                                                  </li></ul></td>
-
-                                    <td><ul class="list-group m-b-0 user-list">
-                                        <li class="list-group-item">
-
-                                          <div class="user-desc">
-                                            <a href="#" class="user-list-item">
-
-                                              <span float-right class="name">$248</span>
-
-                                            </a>
-
-
-
-                                          </div>
-
-                                        </li></ul></td>
-
-                                      </tr>
-
-
-
-
-
-
-
-          </tbody>
-      </table>
-  </div>
-</div>
-
-
-
-
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <h4 class="header-title m-t-0">Top Accounts</h4>
-                                <p class="text-muted">By MS vs. Fair Share</p>
-
-<div class="row">
-
-  <div class="table-responsive">
-      <table class="table">
-          <thead>
-          <tr>
-            <th>Account</th>
-
-              <th>MS vs. Fair Share</th>
-              <th>MS. vs. LY</th>
-
-          </tr>
-          </thead>
-          <tbody>
-            <tr>
-
-                    <td><ul class="list-group m-b-0 user-list">
-                        <li class="list-group-item">
-                            <a href="#" class="user-list-item">
-                              <div class="avatar text-center">1.
-                              </div>
-                                <div class="avatar">
-                                    <img src="assets/images/users/brazil.jpg" alt="">
-                                </div>
-                                <div class="user-desc">
-                                    <span float-right class="name">Sonda</span>
-                                    <p class="text-muted">Brazil</p>
-
-
-
-                                </div>
-                            </a>
-                        </li></ul></td>
-
-
-
-              <td><ul class="list-group m-b-0 user-list">
-                  <li class="list-group-item">
-
-                    <div class="user-desc">
-                      <a href="#" class="user-list-item">
-
-                        <span float-right class="name">+48.0</span>
-
-                      </a>
-
-
-
-                    </div>
-
-                  </li></ul></td>
-                  <td><ul class="list-group m-b-0 user-list">
-                      <li class="list-group-item">
-
-                        <div class="user-desc">
-                          <a href="#" class="user-list-item">
-
-                            <span float-right class="name">N/A</span>
-
-                          </a>
-
-
-
-                        </div>
-
-                      </li></ul></td>
-                </tr>
-                <tr>
-
-                        <td><ul class="list-group m-b-0 user-list">
-                            <li class="list-group-item">
-                                <a href="#" class="user-list-item">
-                                  <div class="avatar text-center">2.
-                                  </div>
-                                    <div class="avatar">
-                                        <img src="assets/images/users/china.jpg" alt="">
-                                    </div>
-                                    <div class="user-desc">
-                                        <span float-right class="name">Tmall</span>
-                                        <p class="text-muted">China</p>
-
-
-
-                                    </div>
-                                </a>
-                            </li></ul></td>
-
-
-
-                  <td><ul class="list-group m-b-0 user-list">
-                      <li class="list-group-item">
-
-                        <div class="user-desc">
-                          <a href="#" class="user-list-item">
-
-                            <span float-right class="name">+29.1</span>
-
-                          </a>
-
-
-
-                        </div>
-
-                      </li></ul></td>
-                      <td><ul class="list-group m-b-0 user-list">
-                          <li class="list-group-item">
-
-                            <div class="user-desc">
-                              <a href="#" class="user-list-item">
-
-                                <span float-right class="name">+22.4</span>
-
-                              </a>
-
-
-
-                            </div>
-
-                          </li></ul></td>
-                    </tr>
-
-                    <tr>
-
-                            <td><ul class="list-group m-b-0 user-list">
-                                <li class="list-group-item">
-                                    <a href="#" class="user-list-item">
-                                      <div class="avatar text-center">3.
-                                      </div>
-                                        <div class="avatar">
-                                            <img src="assets/images/users/mexico.jpg" alt="">
-                                        </div>
-                                        <div class="user-desc">
-                                            <span float-right class="name">Walmart</span>
-                                            <p class="text-muted">Mexico</p>
-
-
-
-                                        </div>
-                                    </a>
-                                </li></ul></td>
-
-
-
-                      <td><ul class="list-group m-b-0 user-list">
-                          <li class="list-group-item">
-
-                            <div class="user-desc">
-                              <a href="#" class="user-list-item">
-
-                                <span float-right class="name">+25.4</span>
-
-                              </a>
-
-
-
-                            </div>
-
-                          </li></ul></td>
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">+9.5</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-                        </tr>
-                        <tr>
-
-                                <td><ul class="list-group m-b-0 user-list">
-                                    <li class="list-group-item">
-                                        <a href="#" class="user-list-item">
-                                          <div class="avatar text-center">4.
-                                          </div>
-                                            <div class="avatar">
-                                                <img src="assets/images/users/mexico.jpg" alt="">
-                                            </div>
-                                            <div class="user-desc">
-                                                <span float-right class="name">Superama</span>
-                                                <p class="text-muted">Mexico</p>
-
-
-
-                                            </div>
-                                        </a>
-                                    </li></ul></td>
-
-
-
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">+15.4</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">-8.8</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-                            </tr>
-                            <tr>
-
-                                    <td><ul class="list-group m-b-0 user-list">
-                                        <li class="list-group-item">
-                                            <a href="#" class="user-list-item">
-                                              <div class="avatar text-center">5.
-                                              </div>
-                                                <div class="avatar">
-                                                    <img src="assets/images/users/usa.jpg" alt="">
-                                                </div>
-                                                <div class="user-desc">
-                                                    <span float-right class="name">Delivery.com</span>
-                                                    <p class="text-muted">USA</p>
-
-
-
-                                                </div>
-                                            </a>
-                                        </li></ul></td>
-
-
-
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">+12.2</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-                                  <td><ul class="list-group m-b-0 user-list">
-                                      <li class="list-group-item">
-
-                                        <div class="user-desc">
-                                          <a href="#" class="user-list-item">
-
-                                            <span float-right class="name">-0.6</span>
-
-                                          </a>
-
-
-
-                                        </div>
-
-                                      </li></ul></td>
-                                </tr>
-
-
-
-
-
-          </tbody>
-      </table>
-  </div>
-</div>
-
-
-
-
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <h4 class="header-title m-t-0">Top Accounts</h4>
-                                <p class="text-muted">By Market Share vs. LY</p>
-
-<div class="row">
-
-  <div class="table-responsive">
-      <table class="table">
-          <thead>
-          <tr>
-            <th>Account</th>
-
-              <th>MS. vs. LY</th>
-              <th>Market Share</th>
-
-
-          </tr>
-          </thead>
-          <tbody>
-            <tr>
-
-                    <td><ul class="list-group m-b-0 user-list">
-                        <li class="list-group-item">
-                            <a href="#" class="user-list-item">
-                              <div class="avatar text-center">1.
-                              </div>
-                                <div class="avatar">
-                                    <img src="assets/images/users/argentina.jpg" alt="">
-                                </div>
-                                <div class="user-desc">
-                                    <span float-right class="name">Walmart</span>
-                                    <p class="text-muted">Argentina</p>
-
-
-
-                                </div>
-                            </a>
-                        </li></ul></td>
-
-
-
-              <td><ul class="list-group m-b-0 user-list">
-                  <li class="list-group-item">
-
-                    <div class="user-desc">
-                      <a href="#" class="user-list-item">
-
-                        <span float-right class="name">+26.2</span>
-
-                      </a>
-
-
-
-                    </div>
-
-                  </li></ul></td>
-                  <td><ul class="list-group m-b-0 user-list">
-                      <li class="list-group-item">
-
-                        <div class="user-desc">
-                          <a href="#" class="user-list-item">
-
-                            <span float-right class="name">85.6%</span>
-
-                          </a>
-
-
-
-                        </div>
-
-                      </li></ul></td>
-                </tr>
-                <tr>
-
-                        <td><ul class="list-group m-b-0 user-list">
-                            <li class="list-group-item">
-                                <a href="#" class="user-list-item">
-                                  <div class="avatar text-center">2.
-                                  </div>
-                                    <div class="avatar">
-                                        <img src="assets/images/users/china.jpg" alt="">
-                                    </div>
-                                    <div class="user-desc">
-                                        <span float-right class="name">Tmall </span>
-                                        <p class="text-muted">China</p>
-
-
-
-                                    </div>
-                                </a>
-                            </li></ul></td>
-
-
-
-                  <td><ul class="list-group m-b-0 user-list">
-                      <li class="list-group-item">
-
-                        <div class="user-desc">
-                          <a href="#" class="user-list-item">
-
-                            <span float-right class="name">+22.4</span>
-
-                          </a>
-
-
-
-                        </div>
-
-                      </li></ul></td>
-                      <td><ul class="list-group m-b-0 user-list">
-                          <li class="list-group-item">
-
-                            <div class="user-desc">
-                              <a href="#" class="user-list-item">
-
-                                <span float-right class="name">52.6%</span>
-
-                              </a>
-
-
-
-                            </div>
-
-                          </li></ul></td>
-                    </tr>
-
-                    <tr>
-
-                            <td><ul class="list-group m-b-0 user-list">
-                                <li class="list-group-item">
-                                    <a href="#" class="user-list-item">
-                                      <div class="avatar text-center">3.
-                                      </div>
-                                        <div class="avatar">
-                                            <img src="assets/images/users/mexico.jpg" alt="">
-                                        </div>
-                                        <div class="user-desc">
-                                            <span float-right class="name">Rappi</span>
-                                            <p class="text-muted">Mexico</p>
-
-
-
-                                        </div>
-                                    </a>
-                                </li></ul></td>
-
-
-
-                      <td><ul class="list-group m-b-0 user-list">
-                          <li class="list-group-item">
-
-                            <div class="user-desc">
-                              <a href="#" class="user-list-item">
-
-                                <span float-right class="name">+12.9</span>
-
-                              </a>
-
-
-
-                            </div>
-
-                          </li></ul></td>
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">70.2%</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-                        </tr>
-                        <tr>
-
-                                <td><ul class="list-group m-b-0 user-list">
-                                    <li class="list-group-item">
-                                        <a href="#" class="user-list-item">
-                                          <div class="avatar text-center">5.
-                                          </div>
-                                            <div class="avatar">
-                                                <img src="assets/images/users/brazil.jpg" alt="">
-                                            </div>
-                                            <div class="user-desc">
-                                                <span float-right class="name">Zona Sul</span>
-                                                <p class="text-muted">Brazil</p>
-
-
-
-                                            </div>
-                                        </a>
-                                    </li></ul></td>
-
-
-
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">+9.8</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">47.5%</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-                            </tr>
-                        <tr>
-
-                                <td><ul class="list-group m-b-0 user-list">
-                                    <li class="list-group-item">
-                                        <a href="#" class="user-list-item">
-                                          <div class="avatar text-center">5.
-                                          </div>
-                                            <div class="avatar">
-                                                <img src="assets/images/users/mexico.jpg" alt="">
-                                            </div>
-                                            <div class="user-desc">
-                                                <span float-right class="name">Walmart</span>
-                                                <p class="text-muted">Mexico</p>
-
-
-
-                                            </div>
-                                        </a>
-                                    </li></ul></td>
-
-
-
-                          <td><ul class="list-group m-b-0 user-list">
-                              <li class="list-group-item">
-
-                                <div class="user-desc">
-                                  <a href="#" class="user-list-item">
-
-                                    <span float-right class="name">+9.5</span>
-
-                                  </a>
-
-
-
-                                </div>
-
-                              </li></ul></td>
-                              <td><ul class="list-group m-b-0 user-list">
-                                  <li class="list-group-item">
-
-                                    <div class="user-desc">
-                                      <a href="#" class="user-list-item">
-
-                                        <span float-right class="name">85.4%</span>
-
-                                      </a>
-
-
-
-                                    </div>
-
-                                  </li></ul></td>
-                            </tr>
-
-
-
-
-
-
-          </tbody>
-      </table>
-  </div>
-</div>
-
-
-
-
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-
-
-                </div>
-                <!-- end row -->
-
-
-
-
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="card-body">
-
-
-                                <h4 class="header-title m-t-0 m-b-30">All eRetail Teams: December</h4>
-
-
-                                <div class="table-responsive">
-                                    <table class="table" id="myTable">
-                                        <thead>
-
-                                        <tr>
-                                          <span><button type="button" class="btn btn-primary btn-xs" onclick="sortTableNR()">Sort by NR</button></span>&nbsp;
-                                          <span><button type="button" class="btn btn-primary btn-xs" onclick="sortTableMS()">Sort by MS</button></span>&nbsp;
-                                          <span><button type="button" class="btn btn-primary btn-xs" onclick="sortTable()">Sort by JBP</button></span>
-
-                                            <th>Team</th>
-
-                                            <th>NR ACT(000 USD)</th>
-                                            <th>MS (%)</th>
-                                            <th>JBP </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>UK</td>
-                                            <td>3989</td>
-                                            <td>27.9</td>
-
-                                            <td>2.93</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>China</td>
-                                            <td>12790</td>
-                                            <td>35.3</td>
-                                            <td>3.50</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>USA</td>
-                                            <td>2344</td>
-                                            <td>28.1</td>
-                                            <td>2.10</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>France</td>
-                                            <td>1293</td>
-                                            <td>22.0</td>
-                                            <td>1.80</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Netherlands</td>
-                                            <td>914</td>
-                                            <td>25.7</td>
-                                            <td>3.13</td>
-
-                                        </tr>
-
-                                        <tr>
-                                            <td>Brazil</td>
-                                            <td>1291</td>
-                                            <td>57.4</td>
-                                            <td>3.31</td>
-
-                                        </tr>
-
-                                        <tr>
-                                            <td>Mexico</td>
-                                            <td>919</td>
-                                            <td>74.0</td>
-                                            <td>3.25</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Argentina</td>
-                                            <td>370</td>
-                                            <td>75.7</td>
-                                            <td>2.05</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Belgium</td>
-                                            <td>320</td>
-                                            <td>0</td>
-                                            <td>2.00</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Canada</td>
-                                            <td>568</td>
-                                            <td>39.3</td>
-                                            <td>2.44</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Germany</td>
-                                            <td>128</td>
-                                            <td>0</td>
-                                            <td>2.43</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Chile</td>
-                                            <td>209</td>
-                                            <td>44.0</td>
-                                            <td>1.92</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Uruguay</td>
-                                            <td>13</td>
-                                            <td>0</td>
-                                            <td>0</td>
-
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-                    <script>
-                    function sortTable() {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
-  switching = true;
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[3];
-      y = rows[i + 1].getElementsByTagName("TD")[3];
-      //check if the two rows should switch place:
-      if (Number(x.innerHTML) < Number(y.innerHTML)) {
-        //if so, mark as a switch and break the loop:
-        shouldSwitch = true;
-        break;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <!-- [ if !mso]> <!-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!-- <![endif] -->
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="76x76" href="http://paulgoddarddesign.com/images/apple-icon.jpg">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://paulgoddarddesign.com/images/favicon.jpg">
+    <title>KM Knewsletter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    
+    
+    <style type="text/css">
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass b, .ExternalClass br, .ExternalClass img {line-height: 100% !important;}
+      /* iOS BLUE LINKS */
+      .appleBody a {color:#212121; text-decoration: none;}
+      .appleFooter a {color:#212121!important; text-decoration: none!important;}
+      /* END iOS BLUE LINKS */
+      img {color: #ffffff;text-align: center;font-family: Open Sans, Helvetica, Arial, sans-serif;display: block;}
+      body {margin: 0;padding: 0;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;font-family: 'Open Sans', Helvetica, Arial, sans-serif!important;}
+      body,#body_style {background: #fffffe;}
+      table td {border-collapse: collapse;border-spacing: 0 !important;}
+      table tr {border-collapse: collapse;border-spacing: 0 !important;}
+      table tbody {border-collapse: collapse;border-spacing: 0 !important;}
+      table {border-collapse: collapse;border-spacing: 0 !important;}
+      span.yshortcuts,a span.yshortcuts {color: #000001;background-color: none;border: none;}
+      span.yshortcuts:hover,
+      span.yshortcuts:active,
+      span.yshortcuts:focus {color: #000001; background-color: none; border: none;}
+      img {-ms-interpolation-mode: : bicubic;}
+      a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;
       }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
-</script>
+      /**** My desktop styles ****/
+      @media only screen and (min-width: 600px) {
+        .noDesk {display: none !important;}
+        .td-padding {padding-left: 15px!important;padding-right: 15px!important;}
+        .padding-container {padding: 0px 15px 0px 15px!important;mso-padding-alt: 0px 15px 0px 15px!important;}
+        .mobile-column-left-padding { padding: 0px 0px 0px 0px!important; mso-alt-padding: 0px 0px 0px 0px!important; }
+        .mobile-column-right-padding { padding: 0px 0px 0px 0px!important; mso-alt-padding: 0px 0px 0px 0px!important; }
+        .mobile {display: none !important}
+      }
+      /**** My mobile styles ****/
+      @media only screen and (max-width: 599px) and (-webkit-min-device-pixel-ratio: 1) {
+        *[class].wrapper { width:100% !important; }
+        *[class].container { width:100% !important; }
+        *[class].mobile { width:100% !important; display:block !important; }
+        *[class].image{ width:100% !important; height:auto; }
+        *[class].center{ margin:0 auto !important; text-align:center !important; }
+        *[class="mobileOff"] { width: 0px !important; display: none !important; }
+        *[class*="mobileOn"] { display: block !important; max-height:none !important; }
+        p[class="mobile-padding"] {padding-left: 0px!important;padding-top: 10px;}
+        .padding-container {padding: 0px 15px 0px 15px!important;mso-padding-alt: 0px 15px 0px 15px!important;}
+        .hund {width: 100% !important;height: auto !important;}
+        .td-padding {padding-left: 15px!important;padding-right: 15px!important;}
+        .mobile-column-left-padding { padding: 18px 0px 18px 0px!important; mso-alt-padding: 18px 0px 18px 0px!important; }
+        .mobile-column-right-padding { padding: 18px 0px 0px 0px!important; mso-alt-padding: 18px 0px 0px 0px!important; }
+        .stack { width: 100% !important; }
+        img {width: 100%!important;height: auto!important;}
+        *[class="hide"] {display: none !important}
+        *[class="Gmail"] {display: none !important}
+        .Gmail {display: none !important}
+        .bottom-padding-fix {padding: 0px 0px 18px 0px!important; mso-alt-padding: 0px 0px 18px 0px;}
+      }
+      .social, .social:active {
+        opacity: 1!important;
+        transform: scale(1);
+        transition: all .2s!important;
+      }
+      .social:hover {
+        opacity: 0.8!important;
+        transform: scale(1.1);
+        transition: all .2s!important;
+      }
+      .button.raised {
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all .2s;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      }
+      .button.raised:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);transition: all .2s;
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);transition: all .2s;
+        -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);transition: all .2s;
+      }
+      .card-1 {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        transition: box-shadow .45s;
+      }
+      .card-1:hover {
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        transition: box-shadow .45s;
+      }
+      .ripplelink{
+        display:block
+        color:#fff;
+        text-decoration:none;
+        position:relative;
+        overflow:hidden;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        z-index:0;
+      }
+      .ripplelink:hover{
+      	z-index:1000;
+      }
+      .ink {
+        display: block;
+        position: absolute;
+        background:rgba(255, 255, 255, 0.3);
+        border-radius: 100%;
+        -webkit-transform:scale(0);
+           -moz-transform:scale(0);
+             -o-transform:scale(0);
+                transform:scale(0);
+      }
+      .animate {
+      	-webkit-animation:ripple 0.65s linear;
+         -moz-animation:ripple 0.65s linear;
+          -ms-animation:ripple 0.65s linear;
+           -o-animation:ripple 0.65s linear;
+              animation:ripple 0.65s linear;
+      }
+      @-webkit-keyframes ripple {
+          100% {opacity: 0; -webkit-transform: scale(2.5);}
+      }
+      @-moz-keyframes ripple {
+          100% {opacity: 0; -moz-transform: scale(2.5);}
+      }
+      @-o-keyframes ripple {
+          100% {opacity: 0; -o-transform: scale(2.5);}
+      }
+      @keyframes ripple {
+          100% {opacity: 0; transform: scale(2.5);}
+      }
 
-<script>
-function sortTableMS() {
-var table, rows, switching, i, x, y, shouldSwitch;
-table = document.getElementById("myTable");
-switching = true;
-/*Make a loop that will continue until
-no switching has been done:*/
-while (switching) {
-//start by saying: no switching is done:
-switching = false;
-rows = table.rows;
-/*Loop through all table rows (except the
-first, which contains table headers):*/
-for (i = 1; i < (rows.length - 1); i++) {
-//start by saying there should be no switching:
-shouldSwitch = false;
-/*Get the two elements you want to compare,
-one from current row and one from the next:*/
-x = rows[i].getElementsByTagName("TD")[2];
-y = rows[i + 1].getElementsByTagName("TD")[2];
-//check if the two rows should switch place:
-if (Number(x.innerHTML) < Number(y.innerHTML)) {
-//if so, mark as a switch and break the loop:
-shouldSwitch = true;
-break;
-}
-}
-if (shouldSwitch) {
-/*If a switch has been marked, make the switch
-and mark that a switch has been done:*/
-rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-switching = true;
-}
-}
-}
-</script>
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  </head>
+  <body style="margin:0; padding:0; background-color: #eeeeee;" bgcolor="#eeeeee">
+    <!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+    </style>
+    <![endif]-->
+    <!-- START EMAIL -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#eeeeee">
+      <div class="Gmail" style="height: 1px !important; margin-top: -1px !important; max-width: 600px !important; min-width: 600px !important; width: 600px !important;"></div>
+      <div style="display: none; max-height: 0px; overflow: hidden;">
+        Welcome to the knowledge management knewsletter!
+      </div>
+      <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+      <div style="display: none; max-height: 0px; overflow: hidden;">
+        &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
 
-<script>
-function sortTableNR() {
-var table, rows, switching, i, x, y, shouldSwitch;
-table = document.getElementById("myTable");
-switching = true;
-/*Make a loop that will continue until
-no switching has been done:*/
-while (switching) {
-//start by saying: no switching is done:
-switching = false;
-rows = table.rows;
-/*Loop through all table rows (except the
-first, which contains table headers):*/
-for (i = 1; i < (rows.length - 1); i++) {
-//start by saying there should be no switching:
-shouldSwitch = false;
-/*Get the two elements you want to compare,
-one from current row and one from the next:*/
-x = rows[i].getElementsByTagName("TD")[1];
-y = rows[i + 1].getElementsByTagName("TD")[1];
-//check if the two rows should switch place:
-if (Number(x.innerHTML) < Number(y.innerHTML)) {
-//if so, mark as a switch and break the loop:
-shouldSwitch = true;
-break;
-}
-}
-if (shouldSwitch) {
-/*If a switch has been marked, make the switch
-and mark that a switch has been done:*/
-rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-switching = true;
-}
-}
-}
-</script>
+<br>
+      <!-- VIEW ONLINE -->
+      
 
 
-                </div>
-                <!-- end row -->
+      <!-- VIEW VIEW ONLINE -->
+
+      <!-- START LOGO -->
+<tr>
+        <td width="100%" valign="top" align="center" class="padding-container">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td width="100%" valign="top" align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee">
+                  <tr>
+                    <td align="center">
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <!-- SOCIAL -->
+                          <td align="center" width="300" style="padding-top: 0px!important; padding-bottom: 18px!important; mso-padding-alt: 0px 0px 18px 0px;">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                              
+                            </table>
+                          </td>
+                          <!-- END SOCIAL -->
+                        </tr>
+                        
+                        
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- END LOGO -->
+
+      <!-- START CARD 1 -->
+      <tr>
+        <a href="http://paulgoddarddesign.com/emails/material-design" target="_blank" style="font-size: 12px; font-weight: 500; font-family: 'Roboto Mono', monospace; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee;">View Online</a>
+        <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: 18px!important; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td style="border-radius: 3px; border-bottom: 2px solid #d4d4d4;" class="card-1" width="100%" valign="top" align="center">
+                      <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#ffffff">
+                        <tr>
+                          <td align="center">
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                              <!-- START HEADER IMAGE -->
+                              <tr>
+                                <td align="center" class="hund ripplelink" width="600">
+                                  <img align="center" width="600" style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important" class="hund" src="https://dl.dropbox.com/s/t89549cjthnbav7/km.jpg?dl=0">
+                                </td>
+                              </tr>
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                  Knowledge Knewsletter <small style="font-size: 12px">April edition</small>
+                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                  Welcome to the April Edition of the Knowledge Management Knewsletter! 
+                                  This month we are highlighting a 2019 Gartner report, an internal APAC N best practice, as well as brand new design, SEO, and Slack toolkits.  
+                                 
+                             
+                                  <br>
+                                  <small style="font-size:12px"><br>
+                                  If you're not a member of our ZX Slack, <a href="https://forms.gle/jKjuA67RUvLeyfkK7">click here</a>  </small>
+                                  
+                                  <br>
+                                </td>
+                              </tr>
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              
+                              <!-- END BUTTON -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        
+        <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: ; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+               
+                    
+                        
+                         
+                              <!-- START HEADER IMAGE -->
+                              
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 24px; line-height: 50px; padding-top: ; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                 <b>April Spotlight</b>
+                                </td>
+                              </tr>
+                              
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              
+                              <!-- END BUTTON -->
+                          
+                      
+                        
+                     
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            
+        
+      <!-- END CARD 1 -->
+<tr>
+        <td width="100%" valign="top" align="center" class="padding-container">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee" style="max-width: 600px;">
+            <tr>
+              <td width="100%" align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <!-- 2 COLUMNS -->
+                  <tr>
+                    <td align="center" class="wrapper" style="max-width:600px!important;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!-- LEFT COLUMN -->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src="https://dl.dropbox.com/s/e0x8o8l83r0eur7/Screen%20Shot%202019-04-10%20at%2018.25.27.png?dl=0" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                            Gartner L2 Omnichannel 2019 Report
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                           To benchmark on-site omnichannel enablement and digital marketing performance, Gartner L2 tracked both pure-play retailers and select DTC brands with multiple brick-and-mortar stores. <br><br>
+                                           
+                                          
+                                          </td>
+                                           
+                                        </tr>
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;">
+                                                        <a class="button raised" href="https://drive.google.com/file/d/1447XDmQPij07czjCwWUZkWkWZ0z88ZMs/view?usp=sharing" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 30px; border: 1px solid #25e47a; display: inline-block;">Read</a>
+                                                      </td>
+                                                      
+                                                      
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END LEFT -->
+
+                              <!-- RIGHT COLUMN -->
+                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src="https://dl.dropbox.com/s/5kf7n69lf5jnucy/Screen%20Shot%202019-04-18%20at%2010.51.49.png?dl=0" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                           CHINA WALMART – JDDJ O2O
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                            A best practice from APAC N on piloting 30 mins fast cold beer delivery in 25 cities
+                                          <br> <br>
+                                          <b>Martin Suter</b><br>Head of Digital Commerce, APAC N<br>
+                                          
+                                          
+                                          <b>Kristen Li</b><br> Digital Marketing Manager, APAC N
+                                          
+                                          </td>
+                                        </tr>
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;">
+                                                        <a class="button raised" href="https://drive.google.com/file/d/1ZhjrUvSU82a8PJb0F1vjUlowxHk61s1-/view?usp=sharing" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 40px; border: 1px solid #25e47a; display: inline-block;">Read</a><br>
+                                                      </td>
+                                                      <br>
+                                                      </tr>
+                                                      <tr>
+                                                      
+                                                      
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END RIGHT -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- END 2 COLUMNS -->
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      
+      
+        
+        <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: ; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+               
+                    
+                        
+                         
+                              <!-- START HEADER IMAGE -->
+                              
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 24px; line-height: 50px; padding-top: ; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                 <b>New External Guides</b>
+                                </td>
+                              </tr>
+                              
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              
+                              <!-- END BUTTON -->
+                          
+                      
+                        
+                     
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          
+      <tr>
+        <td width="100%" valign="top" align="center" class="padding-container">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee" style="max-width: 600px;">
+            <tr>
+              <td width="100%" align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <!-- 2 COLUMNS -->
+                  <tr>
+                    <td align="center" class="wrapper" style="max-width:600px!important;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!-- LEFT COLUMN -->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src="https://cdn-backlinko.pressidium.com/wp-content/uploads/2018/10/seo-this-year-feed-e1540362238555.png" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                           The Definitive Guide To SEO In 2019
+
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                          
+                                          Covering the most important SEO trends for 2019 as well as strategies that are working right now.
+                                          
+                                          </td>
+                                        </tr>
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;">
+                                                        <a class="button raised" href="https://backlinko.com/seo-this-year" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 40px; border: 1px solid #25e47a; display: inline-block;">Open</a>
+                                                      </td>
+                                                     
+                                                      </tr>
+                                                      <tr>
+                                                      
+                                                      
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END LEFT -->
+
+                              <!-- RIGHT COLUMN -->
+                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src= "https://dl.dropbox.com/s/199sqw6uy9y3c4x/Screen%20Shot%202019-04-10%20at%2019.33.45.png?dl=0" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;"><br><br>
+                                 InVision Best Practices for Better Design<br>
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                         Discover the best practices, stories, and insights from the world’s top design teams and leaders. Loaded with in-depth books, podcasts, and more, Design Better is your essential guide to building remarkable products and teams.
+
+                                          </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                            
+                                          </td>
+                                        </tr>
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;" bgcolor="">
+                                                        <a class="button raised" href="https://www.designbetter.co/" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 30px; border: 1px solid #25e47a; display: inline-block;">Open</a>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              
+                              <!-- END RIGHT -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- END 2 COLUMNS -->
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" valign="top" align="center" class="padding-container">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee" style="max-width: 600px;">
+            <tr>
+              <td width="100%" align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <!-- 2 COLUMNS -->
+                  <tr>
+                    <td align="center" class="wrapper" style="max-width:600px!important;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!-- LEFT COLUMN -->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src="https://dl.dropbox.com/s/larrfgqoby6w2cw/Screen%20Shot%202019-04-16%20at%2011.11.57.png?dl=0" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                          The Entrepreneur's Toolkit
+
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                         Techstars Entrepreneur’s Toolkit is an online educational resource to help you learn the fundamentals of entrepreneurship and accelerate your success.
+                                          <br><br><br><br>
+                                          </td>
+                                          
+                                        </tr>
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;">
+                                                        <a class="button raised" href="https://toolkit.techstars.com/" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 40px; border: 1px solid #25e47a; display: inline-block;">Open</a>
+                                                      </td>
+                                                     
+                                                      </tr>
+                                                      <tr>
+                                                      
+                                                      
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END LEFT -->
+
+                              <!-- RIGHT COLUMN -->
+                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="stack" width="290px" bgcolor="#eeeeee">
+                                <tr>
+                                  <td style="padding: 0px 0px 18px 0px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="card-1" style="border-bottom: 2px solid #d4d4d4;">
+                                      <tbody>
+                                        <tr>
+                                          <td class="ripplelink" align="left" width="600">
+                                            <img src= "https://dl.dropbox.com/s/5mvfws0azjeh46f/Screen%20Shot%202019-04-10%20at%2019.46.27.png?dl=0" width="600" style="border-radius: 3px 3px 0px 0px; display: block; border: 0px; width: 100%; max-width: 600px;" />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 16px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                 The Most Extensive Slack Playbook
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 12px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                         Standuply spent 500 hours to make this Slack Guide. Hopefully, this is the only guide on how to use Slack and FAQ you will need to supercharge your work.<br><br>
+                                         
+                                         
+ 
+                                          </td>
+                                        </tr>
+                                      
+                                       
+                                        <!-- END BODY COPY -->
+                                        <!-- BUTTON -->
+                                        <tr>
+                                          <td bgcolor="#ffffff" align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left" style="border-radius: 3px;" bgcolor="">
+                                                        <a class="button raised" href="https://standuply.com/how-to-use-slack" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 30px; border: 1px solid #25e47a; display: inline-block;">Open</a>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- END BUTTON -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              
+                              <!-- END RIGHT -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- END 2 COLUMNS -->
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: ; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+               
+                    
+                        
+                         
+                              <!-- START HEADER IMAGE -->
+                              
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 24px; line-height: 50px; padding-top: ; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                 <b>ZX KM Platform Spotlight</b>
+                                </td>
+                              </tr>
+                              
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              
+                              <!-- END BUTTON -->
+                          
+                      
+                        
+                     
+                    </td>
+                  </tr>
+                </table>
+              </td>
+      
+      <tr>
+        
+        <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: 18px!important; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td style="border-radius: 3px; border-bottom: 2px solid #d4d4d4;" class="card-1" width="100%" valign="top" align="center">
+                      <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#ffffff">
+                        <tr>
+                          <td align="center">
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                              <!-- START HEADER IMAGE -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                   <b><small style="font-size: 14px">Did you know we have a Research Reports folder in the ZX Google Drive? </small></b><br>
+                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="hund ripplelink" width="600">
+                                  <img align="center" width="600" style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important" class="hund" src="https://dl.dropbox.com/s/7qp391pu2fdg6g7/Screen%20Shot%202019-04-18%20at%2010.42.58.png?dl=0">
+                                </td>
+                              </tr>
+                              
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                   
+                                 <a class="button raised" href="https://drive.google.com/drive/u/0/folders/1RZfrVg80Zoc_M2wq1dbeQvP-8vqOhZDp" target="_blank" style="font-size: 14px; line-height: 14px; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #25e47a; text-decoration: none; border-radius: 3px; padding: 10px 40px; border: 1px solid #25e47a; display: inline-block;">Open</a>
+                             
+                                  <br>
+                                  <small style="font-size:12px"><br>
+                                  If you're not a member of our ZX Drive, <a href="https://forms.gle/jKjuA67RUvLeyfkK7">click here</a>  </small>
+                                  
+                                  <br>
+                                </td>
+                              </tr>
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              
+                              <!-- END BUTTON -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+      <!-- START CARD 2 -->
+      <br>
+      <tr>
+        <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: 18px!important; mso-padding-alt: 0px 0px 18px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td style="border-radius: 3px; border-bottom: 2px solid #d4d4d4;" class="card-1" width="100%" valign="top" align="center">
+                      <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#ffffff">
+                        <tr>
+                          <td align="center">
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                              <!-- START HEADER IMAGE -->
+                              
+                              <!-- END HEADER IMAGE -->
+                              <!-- START BODY COPY -->
+                              <tr>
+                                <td class="td-padding" align="left" style="font-family: 'Roboto Mono', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                 Thanks for reading!
+                                 
+                                 
+                                 
+                                
+                                
+                                
+                              </tr>
+                              <tr>
+                                <td>
+                                <!doctype html> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"> <head> <title></title> <!--[if !mso]><!-- --> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--<![endif]--> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style type="text/css"> #outlook a { padding: 0; } .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; } .ExternalClass * { line-height: 100%; } body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; } img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; } p { display: block; margin: 13px 0; } </style> <!--[if !mso]><!--> <style type="text/css"> @media only screen and (max-width:480px) { @-ms-viewport { width: 320px; } @viewport { width: 320px; } } </style> <!--<![endif]--> <!--[if mso]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> <![endif]--> <!--[if lte mso 11]> <style type="text/css"> .outlook-group-fix { width:100% !important; } </style> <![endif]--> <!--[if !mso]><!--> <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css"> <style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Karla); </style> <!--<![endif]--> <style type="text/css"> .hidden { display: none !important; width: 0 !important; height: 0 !important; max-height: 0 !important; } @media all and (max-width: 480px) { .mj-column-per-19 { width: 100% !important; } .mj-column-per-32 { width: 100% !important; } .mj-column-per-100 { width: 100% !important; } .desktop-labels { display: none !important; width: 0 !important; height: 0 !important; max-height: 0 !important; } .opinionScale>table>tbody>tr>td { padding: 0px 25px !important; } .titleText div { font-size: 19px !important; } .description { padding: 0px !important; } .descriptionText { font-size: 14px !important; } .opinionScaleStep { padding: 5px 0px !important; } .opinionScaleStep a { line-height: 50px !important; } .opinionScaleStep table tbody tr td tbody tr td { font-size: 16px !important; border-right: 1px solid #4FB0AE !important; border-radius: 2px !important; } .mobile-label { display: block !important; width: auto !important; height: auto !important; max-height: none !important; padding: 10px 0px 5px 0px !important; } } </style> <style type="text/css"> @media only screen and (min-width:480px) { .mj-column-per-100 { width: 100% !important; } .mj-column-per-19 { width: 19.2% !important; } .mj-column-per-32 { width: 32% !important; } } </style> </head> <body> <div class="mj-container container" style="border-radius: 5px; background-color: #FFFFFF; width: 100%;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;"> <tr> <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"> <![endif]--> <div style="margin:0px auto;max-width:600px;background:#FFFFFF;"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; background: #FFFFFF; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:30px 0px 10px 0px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="width:600px;" class="title-outlook"> <![endif]--> <div style="margin: 0px auto; max-width: 600px; width: 96%;" class="title"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 28px 20px 28px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:top;width:600px;"> <![endif]--> <div class="mj-column-per-100 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 100%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr class="titleText"> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="left"> <div style="cursor:auto;color:#3D3D3D;font-family:Font, 'Karla', Helvetica, Arial;font-size:22px;line-height:1.4;text-align:left;">How would you rate this newsletter?</div> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> <tr> <td style="width:600px;" class="hidden-outlook description-outlook"> <![endif]--> <div style="margin: 0px auto; max-width: 600px; width: 96%;" class="hidden description"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 28px 20px 28px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:top;width:600px;"> <![endif]--> <div class="mj-column-per-100 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 100%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr class="descriptionText"> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="left"> <div style="cursor:auto;color:#3D3D3D;font-family:Font, 'Karla', Helvetica, Arial;font-size:16px;line-height:22px;text-align:left;"></div> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> <tr> <td style="width:600px;" class="mobile-label-outlook"> <![endif]--> <div style="margin: 0px auto; max-width: 600px; display: none; width: 0; height: 0; max-height: 0;" class="mobile-label"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 0px 5px 0px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:undefined;width:600px;"> <![endif]--> <div style="cursor:auto;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:13px;font-weight:200;line-height:22px;text-align:center;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="display:none;mso-hide:all;width:600px;"> <![endif]--> <!--[if mso | IE]> </td></tr></table> <![endif]--> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> <tr> <td style="width:600px;" class="opinionScale-outlook"> <![endif]--> <div style="margin:0px auto;max-width:600px;" class="opinionScale"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 28px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:top;width:114px;" class="opinionScaleStep-outlook"> <![endif]--> <div class="mj-column-per-19 outlook-group-fix opinionScaleStep" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 19.2%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="border:none;border-bottom:1px solid #4FB0AE;border-left:1px solid #4FB0AE;border-radius:3px 0px 0px 3px;border-top:1px solid #4FB0AE;color:#4FB0AE;cursor:auto;padding:0px;" align="center" valign="middle" bgcolor="#f6fbfa"><a href="https://andreas222.typeform.com/to/GXRWjV?prefilled_answer=1" style="text-decoration:none;background:#f6fbfa;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:15px;font-weight:normal;line-height:4;text-transform:none;margin:0;padding:0;display:block;" target="_blank">1</a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:114px;" class="opinionScaleStep-outlook"> <![endif]--> <div class="mj-column-per-19 outlook-group-fix opinionScaleStep" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 19.2%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="border:none;border-bottom:1px solid #4FB0AE;border-left:1px solid #4FB0AE;border-radius:0px;border-top:1px solid #4FB0AE;color:#4FB0AE;cursor:auto;padding:0px;" align="center" valign="middle" bgcolor="#f6fbfa"><a href="https://andreas222.typeform.com/to/GXRWjV?prefilled_answer=2" style="text-decoration:none;background:#f6fbfa;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:15px;font-weight:normal;line-height:4;text-transform:none;margin:0;padding:0;display:block;" target="_blank">2</a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:114px;" class="opinionScaleStep-outlook"> <![endif]--> <div class="mj-column-per-19 outlook-group-fix opinionScaleStep" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 19.2%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="border:none;border-bottom:1px solid #4FB0AE;border-left:1px solid #4FB0AE;border-radius:0px;border-top:1px solid #4FB0AE;color:#4FB0AE;cursor:auto;padding:0px;" align="center" valign="middle" bgcolor="#f6fbfa"><a href="https://andreas222.typeform.com/to/GXRWjV?prefilled_answer=3" style="text-decoration:none;background:#f6fbfa;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:15px;font-weight:normal;line-height:4;text-transform:none;margin:0;padding:0;display:block;" target="_blank">3</a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:114px;" class="opinionScaleStep-outlook"> <![endif]--> <div class="mj-column-per-19 outlook-group-fix opinionScaleStep" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 19.2%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="border:none;border-bottom:1px solid #4FB0AE;border-left:1px solid #4FB0AE;border-radius:0px;border-top:1px solid #4FB0AE;color:#4FB0AE;cursor:auto;padding:0px;" align="center" valign="middle" bgcolor="#f6fbfa"><a href="https://andreas222.typeform.com/to/GXRWjV?prefilled_answer=4" style="text-decoration:none;background:#f6fbfa;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:15px;font-weight:normal;line-height:4;text-transform:none;margin:0;padding:0;display:block;" target="_blank">4</a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:114px;" class="opinionScaleStep-outlook"> <![endif]--> <div class="mj-column-per-19 outlook-group-fix opinionScaleStep" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 19.2%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="border:none;border-bottom:1px solid #4FB0AE;border-left:1px solid #4FB0AE;border-radius:0px 3px 3px 0px;border-right:1px solid #4FB0AE;border-top:1px solid #4FB0AE;color:#4FB0AE;cursor:auto;padding:0px;" align="center" valign="middle" bgcolor="#f6fbfa"><a href="https://andreas222.typeform.com/to/GXRWjV?prefilled_answer=5" style="text-decoration:none;background:#f6fbfa;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:15px;font-weight:normal;line-height:4;text-transform:none;margin:0;padding:0;display:block;" target="_blank">5</a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> <tr> <td style="width:600px;" class="mobile-label-outlook"> <![endif]--> <div style="margin: 0px auto; max-width: 600px; display: none; width: 0; height: 0; max-height: 0;" class="mobile-label"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:5px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:undefined;width:600px;"> <![endif]--> <div style="cursor:auto;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:13px;font-weight:200;line-height:22px;text-align:center;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="display:none;mso-hide:all;width:600px;"> <![endif]--> <!--[if mso | IE]> </td></tr></table> <![endif]--> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> <tr> <td style="width:600px;" class="desktop-labels-outlook"> <![endif]--> <div style="margin: 0px auto; max-width: 600px; word-break: break-all;" class="desktop-labels"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:top;width:192px;"> <![endif]--> <div class="mj-column-per-32 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 32%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:10px 0px 10px 28px;" align="left"> <div style="cursor:auto;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:13px;font-weight:200;line-height:22px;text-align:left;"></div> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:192px;"> <![endif]--> <div class="mj-column-per-32 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 32%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:10px 0px;" align="center"> <div style="cursor:auto;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:13px;font-weight:200;line-height:22px;text-align:center;"></div> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td><td style="vertical-align:top;width:192px;"> <![endif]--> <div class="mj-column-per-32 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 32%;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-spacing: 0px;"> <tbody> <tr> <td style="word-wrap:break-word;font-size:0px;padding:10px 28px 10px 0px;" align="right"> <div style="cursor:auto;color:#4FB0AE;font-family:Font, 'Karla', Helvetica, Arial;font-size:13px;font-weight:200;line-height:22px;text-align:right;"></div> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> </table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;"> <tr> <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"> <![endif]--> <div style="margin:0px auto;max-width:600px;background:#FFFFFF;"> <table role="presentation" cellpadding="0" cellspacing="0" style="font-size: 0px; width: 100%; background: #FFFFFF; border-spacing: 0px;" align="center" border="0" width="100%"> <tbody> <tr> <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 0px 20px 0px;"> <!--[if mso | IE]> <table role="presentation" border="0" cellpadding="0" cellspacing="0"> <tr> <td style="vertical-align:undefined;width:300px;"> <![endif]--> <div style="cursor:auto;color:#000000;font-family:Helvetica, Arial;font-size:12px;font-weight:normal;line-height:22px;text-align:center;"><a href="https://admin.typeform.com/signup?utm_campaign=GXRWjV&utm_source=typeform.com-12427938-Basic&utm_medium=typeform&utm_content=typeform-embed-email&utm_term=EN" target="_blank" style="color: #3D3D3D; text-decoration: none;"> Powered by <strong>Typeform</strong> </a></div> <!--[if mso | IE]> </td><td style="vertical-align:undefined;width:1px;"> <![endif]--> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0px;" align="center" border="0"> <tbody> <tr> <td style="width:1px;"><img alt="" height="1px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:1px;" width="1"></td> </tr> </tbody> </table> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </div> </body> </html>
 
 
 
-                <!-- End Footer -->
+                                </td>
+                              </tr>
+                              <!-- END BODY COPY -->
+                              <!-- BUTTON -->
+                              <tr>
+                                <td align="left" style="padding: 18px 18px 18px 18px; mso-alt-padding: 18px 18px 18px 18px!important;">
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td>
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                           
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- END BUTTON -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- END CARD 2 -->
 
-            </div>
-            <!-- end container -->
-
-            <!-- Right Sidebar -->
-
-
-        </div>
+      <!-- START CARD 3 -->
+      
+      <!-- END CARD 3 -->
 
 
+      <!-- START COLUMNS -->
+      
+      <!-- END COLUMNS -->
 
+      <!-- SPACER -->
+      <!--[if gte mso 9]>
+      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+        <tr>
+          <td align="center" valign="top" width="600" height="18">
+            <![endif]-->
+            <tr><td height="18px"></td></tr>
+            <!--[if gte mso 9]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+      <!-- END SPACER -->
+      <!-- FOOTER -->
+      
+      <!-- FOOTER -->
 
+      <!-- SPACER -->
+      <!--[if gte mso 9]>
+      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+        <tr>
+          <td align="center" valign="top" width="600" height="36">
+            <![endif]-->
+            <tr><td height="36px"></td></tr>
+            <!--[if gte mso 9]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+      <!-- END SPACER -->
 
+    </table>
+    <!-- END EMAIL -->
+    <tr>
+        <td width="100%" valign="top" align="left" class="padding-container" style="padding: 1px 0px 0px 0px!important; mso-padding-alt: 18px 0px 0px 0px;">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee">
+            <tr>
+              <td align="center" bgcolor="#eeeeee">
+                <a href="<%asm_global_unsubscribe_raw_url%>" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Roboto Mono', monospace; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">Unsubscribe<br><br></a>
+              </td>
 
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-
-
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/detect.js"></script>
-        <script src="assets/js/fastclick.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/jquery.blockUI.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/jquery.nicescroll.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
-
-        <!--Morris Chart-->
-		<script src="assets/plugins/morris/morris.min.js"></script>
-		<script src="assets/plugins/raphael/raphael-min.js"></script>
-
-        <!-- Counter Up  -->
-        <script src="assets/plugins/waypoints/lib/jquery.waypoints.js"></script>
-        <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
-
-        <!-- Dashboard init -->
-        <script src="assets/pages/jquery.dashboard.js"></script>
-
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
-
-    </body>
+    </div>
+  </body>
 </html>

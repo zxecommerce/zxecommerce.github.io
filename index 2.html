@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to the Zx eRetail Dashboard">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>eCommerce eRetail - Update</title>
+
+        <!--Morris Chart CSS -->
+
+        <link href="https://dl.dropbox.com/s/l3843ok8h9d496h/bootstrap.min.css?dl=0" rel="stylesheet" type="text/css" />
+        <link href="https://dl.dropbox.com/s/4omjwh7e1mxuqxf/icons.css?dl=0" rel="stylesheet" type="text/css" />
+        <link href="https://dl.dropbox.com/s/yn0cmq0icz4ioki/style.css?dl=0" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+
+
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1">
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="index.html" class="logo">
+                            Zx<span class="text-custom">eComm</span>
+                            <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+
+                    <div class="navbar-custom navbar-left">
+                        <div id="navigation">
+                            <!-- Navigation Menu-->
+                            <ul class="navigation-menu">
+                                <li>
+                                    <a href="index.html">
+                                        <span> eRetail Monthly Reports </span> </a>
+                                </li>
+
+                                    </ul>
+                                </li>
+
+
+
+
+
+                            </ul>
+                            <!-- End navigation menu  -->
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </header>
+        <!-- End Navigation Bar-->
+
+<script>
+                    function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[3];
+      y = rows[i + 1].getElementsByTagName("TD")[3];
+      //check if the two rows should switch place:
+      if (Number(x.innerHTML) < Number(y.innerHTML)) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+<script>
+function sortTableMS() {
+var table, rows, switching, i, x, y, shouldSwitch;
+table = document.getElementById("myTable");
+switching = true;
+/*Make a loop that will continue until
+no switching has been done:*/
+while (switching) {
+//start by saying: no switching is done:
+switching = false;
+rows = table.rows;
+/*Loop through all table rows (except the
+first, which contains table headers):*/
+for (i = 1; i < (rows.length - 1); i++) {
+//start by saying there should be no switching:
+shouldSwitch = false;
+/*Get the two elements you want to compare,
+one from current row and one from the next:*/
+x = rows[i].getElementsByTagName("TD")[2];
+y = rows[i + 1].getElementsByTagName("TD")[2];
+//check if the two rows should switch place:
+if (Number(x.innerHTML) < Number(y.innerHTML)) {
+//if so, mark as a switch and break the loop:
+shouldSwitch = true;
+break;
+}
+}
+if (shouldSwitch) {
+/*If a switch has been marked, make the switch
+and mark that a switch has been done:*/
+rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+switching = true;
+}
+}
+}
+</script>
+
+<script>
+function sortTableNR() {
+var table, rows, switching, i, x, y, shouldSwitch;
+table = document.getElementById("myTable");
+switching = true;
+/*Make a loop that will continue until
+no switching has been done:*/
+while (switching) {
+//start by saying: no switching is done:
+switching = false;
+rows = table.rows;
+/*Loop through all table rows (except the
+first, which contains table headers):*/
+for (i = 1; i < (rows.length - 1); i++) {
+//start by saying there should be no switching:
+shouldSwitch = false;
+/*Get the two elements you want to compare,
+one from current row and one from the next:*/
+x = rows[i].getElementsByTagName("TD")[1];
+y = rows[i + 1].getElementsByTagName("TD")[1];
+//check if the two rows should switch place:
+if (Number(x.innerHTML) < Number(y.innerHTML)) {
+//if so, mark as a switch and break the loop:
+shouldSwitch = true;
+break;
+}
+}
+if (shouldSwitch) {
+/*If a switch has been marked, make the switch
+and mark that a switch has been done:*/
+rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+switching = true;
+}
+}
+}
+</script>
+
+
+                </div>
+                <!-- end row -->
+
+
+
+                <!-- End Footer -->
+
+            </div>
+            <!-- end container -->
+
+            <!-- Right Sidebar -->
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!--Morris Chart-->
+		<script src="assets/plugins/morris/morris.min.js"></script>
+		<script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <!-- Counter Up  -->
+        <script src="assets/plugins/waypoints/lib/jquery.waypoints.js"></script>
+        <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+</html>
