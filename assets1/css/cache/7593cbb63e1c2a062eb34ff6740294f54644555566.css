@@ -251,6 +251,9 @@ div.section-body div.session-track.track-sky {
 div.section-body div.session-track.track-mandarin {
     background-color: rgba(255, 134, 14, 0.15)
 }
+div.section-body div.session-track.track-grey {
+    background-color: rgba(220, 220, 220, 0.9)
+}
 
 div.section-body div.session-track.track-red {
     background-color: rgba(166, 35, 60, 0.10)
