@@ -1438,8 +1438,7 @@ html {
 
 body.page {
     -webkit-font-smoothing: subpixel-antialiased;
-    background-color: #FFF;
-    background: none;
+    background-color: #FAFBFE;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', 'Arial', sans-serif;
@@ -1550,7 +1549,7 @@ select:focus,
 }
 
 div.content-form-container {
-    background-color: #FFF;
+    background-color: #FAFBFE;
     border-top: 1px dashed #cad1d9;
     padding-top: 1em;
     margin-top: 2em
@@ -1896,7 +1895,7 @@ h4.modal-title {
 }
 
 .navbar {
-    background-color: #fff;   
+    background-color: #FAFBFE;   
     min-height: 120px
 }
 
@@ -2253,7 +2252,7 @@ main.content p.lead {
 }
 
 main.content div.main-inner {
-    background-color: #FFF;
+    background-color: #FAFBFE;
     flex: 1;
     margin: 2em auto;
     max-width: 1140px;
